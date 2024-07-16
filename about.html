@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>about</title>
+    <style>
+        .navbar {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: var(--blue4);
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1px 100px; */
+}
+.container{
+    margin-top: 50px;
+}
+.nav-list {
+    list-style-type: none;
+    margin-left: -50px;
+    padding: 0;
+    display: inline-flex;
+    /* padding: 10px 100px; */
+}
+nav button{
+    height: 30px;
+    width: 150px;
+    background-color: var(--blue2);
+    border-radius: 10px;
+    color: white;
+}
+nav h1{
+  color: black;
+  text-decoration: none;
+  
+}
+:root{
+    --blue1:#050C9C;
+    --blue2:#3572EF;
+    --blue3:#3ABEF9;
+    --blue4:#A7E6FF;
+}
+.nav-list .nav-item{
+    margin-right: 50px;
+    list-style: none;
+}
+.nav-list .nav-item a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 18px;
+}
+.nav-list .nav-item a:hover{
+    color: var(--blue1);
+    cursor: pointer;
+}
+.nav-item i{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color:var(--blue2);
+    color:black;
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+     .blue{
+    width: 100%;
+    height: 250px;
+    background-color: blue;
+}
+.team h1{
+    color: white;
+    font-size: 80px;
+    padding-left: 500px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.blue li{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+
+}
+.blue li a{
+    color: white;
+    padding-left: 560px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.img1{
+    width: 100%;
+    height: 1070px;
+    background-color: white;
+    padding: 10px;
+}
+.img1 h1{
+    color: black;
+    font-size: 50px;
+     position: relative;
+     right: 480px;
+
+}
+.para {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    padding: 10px;
+   
+
+}
+.Vision{
+    width: 100%;
+    height: 450px;
+    background-color:white;
+    margin-right: 200px;
+}
+.team{
+    width: 100%;
+    height: 800px;
+     background-color: rgb(248, 245, 245);
+}
+.stats{
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat {
+    text-align: center;
+}
+
+.number {
+    display: block;
+    font-size: 2em;
+    color: #4b8ad3;
+}
+
+.label {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+.boxs{
+    margin-top: 30PX;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(216, 212, 212);
+}
+.boxs .box1{
+ width: 32%;
+ height:500px;
+ background-color: white;
+ float: left; margin-left: 2px;
+ margin-right:1.3%;
+}
+
+.boxs .box2{
+ width: 32%;
+ height:500px;
+ background-color: white;
+ float: left;
+ margin-right: 1.3%;
+}
+.boxs .box3{
+ width: 32%;
+ height:500px;
+ background-color: white;
+ float: left;
+ margin-right: 1.;
+}
+h11{
+    color: green;
+}
+.hist{
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+}
+footer{
+height: 400px;
+width: 100%;
+background-color: #050C9C;
+color: whitesmoke;
+display: flex;
+}
+footer ul li{
+list-style: none;
+margin-top: 20px;
+}
+footer .foot{
+margin-left: 50px;
+}
+footer .foot h5{
+font-size: 20px;
+}
+.foot11{
+margin-top: 20px;
+}
+.foot12{
+margin-top: 20px;
+}
+.foot12 p{
+margin-top: 10px;
+}
+.foot13{
+margin-top: 20px;
+}
+.foot13 p{
+margin-top: 10px;
+}
+.foot2 h5{
+margin-top: 20px;
+font-size: 20px;
+margin-left: 70px;
+}
+.foot2 form{
+margin-left: 70px;
+
+}
+.foot h5{
+margin-top: 17px;
+font-size: 20px;
+
+}
+form input{
+margin-top: 20px;
+height: 40px;
+width: 300px;
+color: rgb(60, 22, 231);
+border: 1px white solid;
+border-radius: 10px;
+outline: none;
+
+
+}
+.img1 h1{
+    text-align: center;
+    padding-left: 50px;
+}
+form textarea{
+    height: 100px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+form button{
+margin-top: 30px;
+height: 30px;
+width: 200px;
+background-color: rgb(243, 242, 242);
+color: rgb(3, 3, 3);
+border: 1px white solid;
+border-radius: 10px;
+font-size: 100%;
+}
+footer hr{
+color: white;
+margin-top: 50px;
+}
+.hist h5{
+    font-size: 50px;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+ </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a style="text-decoration: none;" href="index.html"><h1>EDUNEXT</h1></a>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Courses</a></li>
+            <div class="dropdown">
+                <li class="nav-item dropbtn"><a href="#">Educational_portal</a><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </li>
+                <div class="dropdown-content">
+                    <a href="#">Resourses</a>
+                    <a href="#">Classes</a>
+                    
+                  </div>
+            </div>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item"><button><a href="#">ContactUs</a></button></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- <div class="blue">
+            <h01>ABOUT
+            </h01>
+            <li><a href="education.css">HOME >> ABOUT</a></li>
+          </div> -->
+
+          <div class="img1">
+            <h1 >Our Mission and Vision</h1>
+            <img src="images/gruopstudent.jpeg    " width="100%">
+          </div>
+          
+        </div>
+        <div class="para">
+          
+            <div class="text">
+              <h2 style="color: white; font-size: 50px; text-align: center; ">Mission
+                Our Purpose</h2>
+               <p style="color: white; font-size: 25px; text-align: center;"> The mission is to build connection and collaborative opportunities on a global<br> platform by instilling a deep sense of ambition. This will<br> balance the playing field on an international level <br>in education and professional development. ILM Educational<br> Consultants seeks to support the application of a growth mindset and by <br>increasing knowledge, we hope to augment equality and opportunities<br> universally. We endeavor to support, nourish and develop <br>leaders to excel globally.</p>
+     
+            </div>
+
+            <div class="Vision">
+                <h3 style="font-size: 40px; padding-top: 50px; padding-left: 80px;">Vision</h3>
+                <h4 style="font-size: 25px; padding-left: 80px; margin-bottom:100p;">Where we want to be</h4>
+                <p style="padding-left: 80px;font-size: 20px;">ILM Educational Consultants aims to equip and prepare individuals<br> and organisations to lead the way in business, entrepreneurial<br> and social engagement around the globe; empowering<br> others with inspirational, proactive and effective <br>leadership.</p>
+            <img style="position: relative; width: 400px; height: 400px;border-radius:50%; left: 700px; bottom: 300px;" src="images/rimg.png" alt="">
+            </div>
+<hr>
+            <div class="team">
+                <h1 style="font-size: 40px; color: black;">TEAM</h1>
+                <p style="font-size: 20px; text-align: center;">We work with the intention of helping an unknown child, sitting in a far-away classroom develop a lifelong love for learning. Education for us is not<br>  just business.It is a cause. We are Next Education.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="number">400+</span>
+                        <span  class="label ">educators</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">300+</span>
+                        <span class="label">Develpors</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">200+</span>
+                        <span class="label">Support staff</span>
+                    </div>
+                  </div>
+                  <div class="boxs">
+                    <div class="box1">
+                  <img src="images/SIR1.jfif" width="100%" height="400px" alt="">
+                
+                  <h11 style="font-size: 30px; padding-left: 70px;"> Mr.Beas deva ralhan</h11>
+                  <p style="font-size: 18px; padding-left: 90px;">Chief Executive officer</p>
+                
+                </div>
+                    <div class="box2">
+                  <img src="images/SIR2.jfif" width="100%" height="400px" alt="">
+                  <h11 style="font-size: 30px; padding-left: 30px;"> Mr.Raveendranath kamath</h11>
+                  <p style="font-size: 18px; padding-left: 80px;">Chief financiel officer</p>
+                
+                </div>
+                   <div class="box3">
+                <img src="images/SIR3.jfif" width="100%" height="400px" alt="">
+                <h11 style="font-size: 30px; padding-left: 80px;"> Mr.Daljith singh</h11>
+                <p style="font-size: 18px; padding-left: 150px;">Director</p>
+
+                   </div>
+                  </div>
+                </div>
+                
+              <marquee style="margin-top: 10PX;">
+            
+             <img src="images/employes.jfif">
+             <img src="images/staff.jfif">
+             <img src="images/educztors.jfif" width="680px">
+                      <img src="images/employes.jfif">
+             <img src="images/staff.jfif">
+             <img src="images/educztors.jfif" width="680px">
+
+
+              </marquee>
+              <hr>
+          <div class="hist">
+            <h5>Company History</h5>
+            <h12 style="padding-left: 20px; position: relative; bottom: 60px;font-size: 27px;">Tata Consultancy Services Limited (TCS):</h12>
+            <p style="font-size: 20px; position: relative;bottom: 50px; padding-left: 20px;">is an Indian multinational information technology (IT) services and consulting company headquartered in Mumbai.[7][8] It is a part of the Tata Group and operates in 150 locations across 46 countries.[9] In March 2024, TCS reported that it had 601,546 employees worldwide.[10][11] TCS is the second-largest Indian company by market capitalization, the most valuable IT service brands worldwide, and the top Big Tech (India) company.[12][13][14] In 2012, it was the world's second-largest user of U.S. H-1B visas.[15]</p>
+            
+            <p style="font-size: 20px ;position: relative; bottom: 50px;padding-left: 20px;">As of 2021, it was ranked seventh on the Fortune India 500 list.[16] In September 2021, TCS recorded a market capitalization of US$200 billion, making it the first Indian IT tech company to do so.[17][18][19][20][21] In 2016–2017, parent company Tata Sons owned 72.05% of TCS[22] and more than 70% of Tata Sons' dividends were generated by TCS.[23]</p>
+          <h12 style="padding-left: 20px; position: relative; bottom: 50px;font-size: 27px;">1968–2005</h12>
+          <p style="padding-left: 20px; font-size: 20px;">Tata Consultancy Services
+
+            Article
+            Talk
+            Read
+            Edit
+            View history
+            
+            Tools
+            Appearance hide
+            Text
+            
+            Small
+            
+            Standard
+            
+            Large
+            Width
+            
+            Standard
+            
+            Wide
+            From Wikipedia, the free encyclopedia
+            Tata Consultancy Services Limited
+            TCS Logo
+            TCS SIPCOT Office
+            TCS campus at SIPCOT, Chennai
+            Company type	Public
+            Traded as	
+            BSE: 532540
+            NSE: TCS
+            BSE SENSEX constituent
+            NSE NIFTY 50 constituent
+            ISIN	INE467B01029
+            Industry	Information technology
+            Consulting
+            Outsourcing
+            Founded	1968; 56 years ago
+            Founder	J. R. D. Tata
+            Headquarters	Mumbai, India
+            Area served	Worldwide
+            Key people	Natarajan Chandrasekaran
+            (Chairman)
+            K. Krithivasan[1]
+            (CEO)
+            Revenue	Increase ₹245,315 crore (US$29 billion)[2] (2024)
+            Operating income	Increase ₹61,997 crore (US$7.4 billion)[2] (2024)
+            Net income	Increase ₹46,099 crore (US$5.5 billion)[2] (2024)
+            Total assets	Increase ₹146,449 crore (US$18 billion)[3] (2024)
+            Total equity	Increase ₹91,319 crore (US$11 billion)[3] (2024)
+            Number of employees	601,546[4] (March 2024)
+            Parent	Tata Group
+            Subsidiaries	
+            TRDDC
+            Website	www.tcs.com
+            Footnotes / references
+            [5][6]
+            Tata Consultancy Services Limited (TCS) is an Indian multinational information technology (IT) services and consulting company headquartered in Mumbai.[7][8] It is a part of the Tata Group and operates in 150 locations across 46 countries.[9] In March 2024, TCS reported that it had 601,546 employees worldwide.[10][11] TCS is the second-largest Indian company by market capitalization, the most valuable IT service brands worldwide, and the top Big Tech (India) company.[12][13][14] In 2012, it was the world's second-largest user of U.S. H-1B visas.[15]
+            
+            As of 2021, it was ranked seventh on the Fortune India 500 list.[16] In September 2021, TCS recorded a market capitalization of US$200 billion, making it the first Indian IT tech company to do so.[17][18][19][20][21] In 2016–2017, parent company Tata Sons owned 72.05% of TCS[22] and more than 70% of Tata Sons' dividends were generated by TCS.[23]
+            
+            History
+            1968–2005
+            Tata Consultancy Services Limited, initially started as Tata Computer Systems, was founded in 1968 by a division of Tata Sons Limited.[24] Its early contracts included punched card services to sister company TISCO (now Tata Steel), working on an Inter-Branch Reconciliation System for the Central Bank of India,[25] and providing bureau services to Unit Trust of India.</p>
+        
+        </div>
+          <footer>
+            <div class="foot">
+                <div class="foot11">
+                    <h5>ALL</h5>
+                    <p>Home<p>
+                </div>
+                <div class="foot12">
+                    <h5>Courses</h5>
+                </div>
+                <div class="foot13">
+                    <h5>Blog</h5>
+                </div>
+                <div class="foot14">
+                    <h5>About</h5>
+                </div>
+                <div class="foot14">
+                    <h5>Contact Us</h5>
+                </div>
+            </div>
+            <div class="foot">
+                <ul>
+                    <li><h5>FAQ</h5></li>
+                    <li>Privacy & Policy</li>
+                    <li>Terms & Services</li>
+                    <li></li>
+                   
+                </ul>
+            </div>
+            <div class="foot">
+                <ul>
+                    <li><h5>Resource</h5></li>
+                    <li>FAQ</li>
+                    <li>Reviews</li>
+                    <li>Blogs</li>
+                    <li>Return Policy</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <ul><li><h5>Utilities</h5></li>
+                <li>Style Guide</li>
+                <li>Error 404</li>
+                <li>Licensing</li>
+                <li>Changelog</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <ul>
+                    <li><h5>Connect</h5></li>
+                    <li> Instagram</li>
+                    <li>Facebook</li>
+                    <li>YouTube</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+            <div class="foot2">
+                <h5>For More Info</h5>
+                <form action="">
+                    <input type="text" placeholder="Your Name"><br>
+                    <input type="text" placeholder="your Mail"><br>
+                    <textarea placeholder="Comment"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </footer>
+          </div>
+</body>
+</html>

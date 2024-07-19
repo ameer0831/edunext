@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;text-decoration: none;
+        border: 0;
+    }
+    nav h1{
+  color: black;
+}
+:root{
+    --blue1:#050C9C;
+    --blue2:#3572EF;
+    --blue3:#3ABEF9;
+    --blue4:#A7E6FF;
+}
+    .python p{
+font-size: 250%;
+    }
+    .navbar {
+height: 100px;
+position: fixed;
+top: 0;
+width: 100%;
+background-color: var(--blue4);
+overflow: hidden;
+z-index: 1000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* padding: 1px 100px; */
+}
+.nav-list {
+list-style-type: none;
+margin-left: -50px;
+padding: 0;
+display: inline-flex;
+/* padding: 10px 100px; */
+}
+nav button{
+height: 30px;
+width: 150px;
+background-color: var(--blue2);
+border-radius: 10px;
+color: white;
+}
+nav h1{
+margin-left: 50px;
+font-size: 30px;
+}
+.nav-list .nav-item{
+margin-right: 50px;
+list-style: none;
+}
+.nav-list .nav-item a{
+text-decoration: none;
+color: rgb(43, 43, 43);
+font-size: 18px;
+}
+.nav-list .nav-item a:hover{
+color: var(--blue1);
+cursor: pointer;
+}
+.nav-item i{
+font-size: 20px;
+padding-left: 10px;
+}
+.dropdown-content{
+display: none;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+background-color:var(--blue2);
+color:black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.head{
+    height:40px ;
+    width: 100%;
+    background-color: var(--blue2);
+    
+  }
+  .head ul{
+    display: flex;
+    margin-top: 100px;
+    
+  }
+  .head ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .head ul li a:hover{
+    color:white
+  }
+  .head ul li a{
+    color: black;
+  }
+  .search{
+    height: 25px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    
+    border-radius: 5px;
+  }
+  .search ion-icon{
+   font-size: 20px;
+   margin-left: 20px;
+   margin-top: 2px;
+  }
+  .search input{
+    outline: none;
+    
+    margin-left: 10px;
+    width: 240px;
+  }
+
+ 
+main {
+    padding: 20px;
+}
+.a1{
+    margin-top: 10px;
+    background-color: rgb(18, 20, 20);
+    width: 250px;
+    height: 50px;
+    
+}
+.a1 a{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+
+}
+ a:hover .a1 {
+  background-color: yellow;
+}
+.intro h1{
+ text-align: left;
+}
+.intro h3{
+ text-align: left;
+ font-size: 20px;
+}
+.intro p{
+    text-align: left;
+    font-size: 20px;
+}
+.intro li{
+    text-align: left;
+    padding: 10px;
+}
+.variable h1{
+    font-size: 50px;
+    text-align: left;
+}
+.variable p{
+    text-align: left;
+    font-size: 20px;
+}
+.create p{
+    font-size: 20px;  
+    text-align: left;
+}
+.create li{
+    text-align: left;
+    padding: 10px;
+}
+.vnames h1{
+text-align: left;
+}
+.vnames p{
+text-align: left;
+font-size: 20px;
+}
+.vnames h1{
+text-align: left;
+}
+.vnames li{
+text-align: left;
+padding: 10px;
+}
+.pdatatypes{
+    text-align: left;
+}
+.pdatatypes li{
+    padding: 10px;
+}
+.pdatatypes p{
+    font-size: 20px;
+}
+.pvalues li{
+    padding: 15px;
+    text-align: left;
+}
+.plists{
+    text-align: left;
+}
+.plists p{
+text-align: left;
+}
+.plists h2{
+text-align: left;
+}
+.list{
+    text-align: left;
+}
+.list p{
+    text-align: left;
+}
+.ordered{
+    text-align: left;
+}
+.ordered p{
+    text-align: left;
+}
+.pfunctions{
+    text-align: left;
+}
+.pfunctions p{
+    text-align: left;
+}
+.parrays{
+    text-align: left;
+}
+.parrays h3{
+    text-align: left;
+}
+.parrays li{
+    padding: 10px;
+}
+.loops{
+    text-align: left;
+}
+.loops li{
+    padding: 10px;
+}
+.python_video{
+    display:flex;
+    justify-content: space-between;
+}
+.poperators{
+    text-align: left;
+}
+.poperators li{
+    padding: 10px;
+}
+.video{
+    margin-right: 150px;
+    margin-top: 100px;
+}
+.pinher{
+    text-align: left;
+}
+.pclcobj{
+    text-align: left;
+}
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: #050C9C;
+    color: whitesmoke;
+    display: flex;
+}
+footer ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+footer .foot{
+    margin-left: 50px;
+}
+footer .foot h5{
+    font-size: 20px;
+}
+.foot11{
+    margin-top: 20px;
+}
+.foot12{
+    margin-top: 20px;
+}
+.foot12 p{
+    margin-top: 10px;
+}
+.foot13{
+    margin-top: 20px;
+}
+.foot13 p{
+    margin-top: 10px;
+}
+.foot2 h5{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+}
+.foot2 form{
+    margin-left: 70px;
+
+}
+.foot h5{
+    margin-top: 17px;
+    font-size: 20px;
+  
+}
+form input{
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+   color: rgb(60, 22, 231);
+    border: 1px white solid;
+    border-radius: 10px;
+    outline: none;
+}
+form button{
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(243, 242, 242);
+    color: rgb(3, 3, 3);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 100%;
+}
+footer hr{
+    color: white;
+    margin-top: 50px;
+}
+.sir{
+    margin-top: 100px;
+}
+</style>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><h1>EDUNEXT</h1></a>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="courses.html">Courses</a></li>
+            <div class="dropdown">
+                <li class="nav-item dropbtn"><a href="#">Educational_portal</a><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </li>
+                <div class="dropdown-content">
+                    <a href="resourses.html">Resourses</a>
+                    <a href="courses.html">Classes</a>
+                    
+                  </div>
+            </div>
+            <li class="nav-item"><a href="blog.html">Blog</a></li>
+            <li class="nav-item"><button><a href="contact us.html">ContactUs</a></button></li>
+        </ul>
+    </nav>
+    <div class="head"><ul>
+        <li><a href="courses.html">HTML</a></li>
+        <li><a href="C.html">C</a></li>
+        <li><a href="java.html">JAVA</a></li>
+        <li><a href="jspage.html">JS</a></li>
+        <li><a href="php.html">PHP</a></li>
+        <li><a href="sql.html">SQL</a></li>
+        <li><a href="mangodb.html">MONGODB</a></li>
+        <li><a href="mysql.html">MYSQL</a></li>
+        <li><a href="pythom.html">Python</a></li>
+        <li><div class="search"><input type="text" placeholder="Search"><ion-icon name="search-outline"></ion-icon></div></li>
+    </ul></div>
+   <div class="sir">
+    <div class="intro">
+        <h1>Python Introduction</h1>
+        <img src="images/python.jfif"  height="300px" width="400px">
+        <h3>What is Python</h3>
+        <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+        <li>Easy to Learn and Use: Python's straightforward syntax makes it an excellent language for beginners and allows developers to write less code to accomplish tasks.</li>
+
+          <li>Interpreted Language: Python code is executed line by line, which makes debugging easier and more efficient.</li>
+            
+          <li>Versatile and Powerful: Python is used in various domains such as web development (with frameworks like Django and Flask), data science (with libraries like Pandas and NumPy), artificial intelligence, machine learning, automation, and more.</li>
+            
+          <li>Extensive Standard Library: Python comes with a large standard library that supports many common programming tasks such as connecting to web servers, reading and modifying files, and working with data formats.</li>
+            
+          <li> Community and Ecosystem: Python has a large and active community that contributes to a vast ecosystem of third-party packages and libraries, enhancing its functionality.</li>
+            
+          <li> Cross-Platform: Python is available on various platforms including Windows, macOS, and Linux, making it a versatile choice for developers.</li>
+    </div>
+    <div class="variable">
+        <h1>Variables</h1>
+        <p>Variables are containers for storing data values.</p>
+    </div>
+    <div class="create">
+        <p>Creating Variables</p>
+    <li>Python has no command for declaring a variable.</li>
+        <li>A variable is created the moment you first assign a value to it.</li>
+    </div>
+    <div class="vnames">
+        <h1>Variable Names</h1>
+        <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+        <li>A variable name must start with a letter or the underscore character</li>
+        <li>A variable name cannot start with a number</li>
+        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+        <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+        <li>A variable name cannot be any of the Python keywords.</li>
+    </div>
+    <div class="pdatatypes">
+        <h1>Python Data Types</h1>
+        <p>Built-In Data Types</p>
+       <li>In programming, data type is an important concept.</li> 
+<li>Variables can store data of different types, and different types can do different things.</li>
+<p>Python has the following data types built-in by default, in these categories:</p>
+    </div>
+    <div class="pvalues">
+<li>  Text Type: str</li>  
+<li> Numeric Types:	int, float, complex</li>  
+<li> Sequence Types:	list, tuple, range</li>  
+<li> Mapping Type:	dict</li>  
+<li> Set Types:	set, frozenset</li>  
+<li> Boolean Type:	bool</li>  
+<li> Binary Types:	bytes, bytearray, memoryview</li>  
+<li> None Type:	NoneType</li>  
+</div>
+<div class="plists">
+    <h1>Python Lists</h1>
+    <h2>List</h2>
+    <p>Lists are used to store multiple items in a single variable.</p>
+    <p>Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.</p>
+</div>
+<div class="list">
+   <h1>List Items</h1>
+   <p>List items are ordered, changeable, and allow duplicate values.</p>
+
+    <p>List items are indexed, the first item has index [0], the second item has index [1] etc.</p>
+</div>
+<div class="ordered">
+    <h1>Ordered</h1>
+   <p> When we say that lists are ordered, it means that the items have a defined order, and that order will not change.</p>
+
+   <p> If you add new items to a list, the new items will be placed at the end of the list.</p>
+</div>
+<div class="pfunctions">
+    <h1>Python Functions</h1>
+    <p>A function is a block of code which only runs when it is called.</p>
+
+    <p> You can pass data, known as parameters, into a function.</p>
+        
+        <p>A function can return data as a result.</p>
+</div>
+<div class="parrays">
+    <h1>What are Python Arrays?</h1>
+    <p>Arrays are a fundamental data structure, and an important part of most programming languages.<br> In Python, they are containers which are able to store more than one item at the same time.<br> Specifically, they are an ordered collection of elements with every<br> value being of the same data type.</p>
+
+<h3>Advantages of Array in Python</h3>
+   <li>Efficient access and handling.</li>
+   <li>Versatility with different data types.</li>
+   <li>Built-in functions for manipulation.</li>
+   <li>Optimized memory usage.</li>
+   <li>Fast data retrieval.</li>
+   <li>Supports various data structures.</li>
+   <li>Simplified iteration.</li>
+   <li>Widely used and supported.</li>
+</div>
+<div class="loops">
+    <h1>When to use For Loop and While Loop in Python?</h1>
+    <p>To decide when should you use for loop and when to use while loop, you can think of these situations and you will the answer:</p>
+    <h2>For Loop</h2>
+    <li>When there is a need of iteration over elements that are in sequence like lists, tuples, strings or dictionaries.</li>
+<li>Use for loops when a known number or a finite number of iteration is required.</li>
+<li>Another situation when you want that each element of a sequence should pass through iteration one by one.</li>
+<li>for loops can also be used when a task requires a sequential access of elements of a sequence.</li>
+<h2>While Loop</h2>
+<li>When there is a need to repeat execution of a block of code until a specified condition becomes False.</li>
+<li>Use while loops when the number of iteration is not determined.</li>
+<li>while loops are can be used when there is a need to repeat execution based on a condition.</li>
+<li> When dynamic adaptation is required based upon condition that may change.</li>
+</div>
+<div class="python_video">
+    <div class="poperators">
+        <h1>Python Operators</h1>
+        <p>Operators are used to perform operations on variables and values.</p>
+        <p>Python divides the operators in the following groups:</p>
+        <li>Arithmetic operators</li>
+        <li>Assignment operators</li>
+        <li>Comparison operators</li>
+        <li>Logical operators</li>
+        <li>Identity operators</li>
+        <li>Membership operators</li>
+        <li>Bitwise operators</li>
+    </div>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y8Tko2YC5hA?si=VixFKnGjU9WQS5b8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+<div class="pinher">
+<h1>Python Inheritance</h1>
+<p>Inheritance allows us to define a class that inherits all the methods and properties from another class.</p>
+
+    <p>Parent class is the class being inherited from, also called base class.</p>
+    
+    <p>Child class is the class that inherits from another class, also called derived class.</p>
+</div>
+<div class="pclcobj">
+    <h1>Python Classes/Objects</h1>
+    <p>Python is an object oriented programming language.</p>
+
+<p>Almost everything in Python is an object, with its properties and methods.</p>
+
+<p>A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+</div>
+    <footer>
+        <div class="foot">
+            <div class="foot11">
+                <h5>ALL</h5>
+                <p>Home<p>
+            </div>
+            <div class="foot12">
+                <h5>Courses</h5>
+            </div>
+            <div class="foot13">
+                <h5>Blog</h5>
+            </div>
+            <div class="foot14">
+                <h5>About</h5>
+            </div>
+            <div class="foot14">
+                <h5>Contact Us</h5>
+            </div>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>FAQ</h5></li>
+                <li>Privacy & Policy</li>
+                <li>Terms & Services</li>
+                <li></li>
+               
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Resource</h5></li>
+                <li>FAQ</li>
+                <li>Reviews</li>
+                <li>Blogs</li>
+                <li>Return Policy</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul><li><h5>Utilities</h5></li>
+            <li>Style Guide</li>
+            <li>Error 404</li>
+            <li>Licensing</li>
+            <li>Changelog</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Connect</h5></li>
+                <li> Instagram</li>
+                <li>Facebook</li>
+                <li>YouTube</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="foot2">
+            <h5>For More Info</h5>
+            <form action="">
+                <input type="text" placeholder="Your Name"><br>
+                <input type="text" placeholder="your Mail"><br>
+                <textarea placeholder="Comment"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </footer>
+</div>
+    
+    </body>
+    </html>

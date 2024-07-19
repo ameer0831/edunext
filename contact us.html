@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    <style>
+        nav h1{
+    color: black;
+  }
+  :root{
+      --blue1:#050C9C;
+      --blue2:#3572EF;
+      --blue3:#3ABEF9;
+      --blue4:#A7E6FF;
+  }.navbar {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--blue4);
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1px 100px; */
+}
+.nav-list {
+    list-style-type: none;
+    margin-left: -50px;
+    padding: 0;
+    display: inline-flex;
+    /* padding: 10px 100px; */
+}
+nav button{
+    height: 30px;
+    width: 150px;
+    background-color: var(--blue2);
+    border-radius: 10px;
+    color: white;
+}
+nav h1{
+    margin-left: 50px;
+    font-size: 30px;
+}
+.nav-list .nav-item{
+    margin-right: 50px;
+    list-style: none;
+}
+.nav-list .nav-item a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 18px;
+}
+.nav-list .nav-item a:hover{
+    color: var(--blue1);
+    cursor: pointer;
+}
+.nav-item i{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color:var(--blue2);
+    color:black;
+}
+   .dropdown:hover .dropdown-content{
+      display: block;
+   }
+  
+
+  .map{
+    margin-top: 120px;
+    margin-left: 50px;
+  }
+  .link{
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .link p{
+    font-size: 20px;
+  }
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #0073e6; /* Change to your desired hover color */
+}
+ .social-icons{
+    transform: translateX(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateX(0);
+     /* transform: translateY(0); */
+    }
+ }
+ footer{
+    height: 400px;
+    width: 100%;
+    background-color: #050C9C;
+    color: whitesmoke;
+    display: flex;
+    margin-top: 50px;
+    }
+    footer ul li{
+    list-style: none;
+    margin-top: 20px;
+    }
+    footer .foot{
+    margin-left: 50px;
+    }
+    footer .foot h5{
+    font-size: 20px;
+    }
+    .foot11{
+    margin-top: 20px;
+    }
+    .foot12{
+    margin-top: 20px;
+    }
+    .foot12 p{
+    margin-top: 10px;
+    }
+    .foot13{
+    margin-top: 20px;
+    }
+    .foot13 p{
+    margin-top: 10px;
+    }
+    .foot2 h5{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+    }
+    .foot2 form{
+    margin-left: 70px;
+    
+    }
+    .foot h5{
+    margin-top: 17px;
+    font-size: 20px;
+    
+    }
+    form input{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    color: rgb(60, 22, 231);
+    border: 1px white solid;
+    border-radius: 10px;
+    outline: none;
+    
+    
+    }
+    form textarea{
+        height: 100px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    form button{
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(243, 242, 242);
+    color: rgb(3, 3, 3);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 100%;
+    }
+    footer hr{
+    color: white;
+    margin-top: 50px;
+    }
+    /* body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }  */
+    
+    .feedback-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 100%;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    
+    .feedback-container h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    
+    .feedback-container p {
+        margin-bottom: 15px;
+    }
+    
+    .feedback-container a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+    
+    .feedback-container a:hover {
+        text-decoration: underline;
+    }
+    
+    .feedback-container label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .feedback-container .required {
+        color: red;
+    }
+    
+    .feedback-container textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #b84b4b;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        resize: vertical;
+    }
+    
+    .feedback-container button {
+        background-color: #0066cc;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+        margin-left: 200px;
+    }
+    
+    .feedback-container button:hover {
+        background-color: #54e684;
+    }
+    </style>
+</head>
+<body>
+    
+
+
+<nav class="navbar">
+    <a style="text-decoration: none;" href="index.html"><h1>EDUNEXT</h1></a>
+    <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">HOME</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="courses.html">Courses</a></li>
+        <div class="dropdown">
+            <li class="nav-item dropbtn"><a href="#">Educational_portal</a><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+            </li>
+            <div class="dropdown-content">
+                <a href="resourses.html">Resourses</a>
+                <a href="#">Classes</a>
+                
+              </div>
+        </div>
+        <li class="nav-item"><a href="blog.html">Blog</a></li>
+        <li class="nav-item"><button><a href="contact us.html">ContactUs</a></button></li>
+    </ul>
+    </nav>
+<div class="feedback-container">
+    <h1>Website Feedback</h1>
+    <p>We welcome your comments or suggestions regarding our Support website.</p>
+    <p><strong>Note:</strong> For help with product issues, please go to <a href="https://example.com/contact-support">Contact Support</a>.</p>
+    <form action="#" method="post">
+        <label for="feedback">Comment or Suggestion:<span class="required">*</span></label>
+        <textarea id="feedback" name="feedback" rows="10" cols="50" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+     <div class="link">
+        <h1>Best Free Social Networks/Media Sites for Education</h1>
+        <p>By Diana Restifo published 19 April 2022</p>
+        <p>These top social networking/media sites are free, easy to use, and offer rich<br> opportunities for educators and students to network, create, share and learn with<br> each other.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://google.co.in/" class="social-icon"><i class="fab fa-google"></i></a>
+            <a href="https://in.linkedin.com/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <!-- <a href="#" class="social-icon"><i class="fab fa-reddit"></i></a> -->
+            <a href="https://en.wikipedia.org/wiki/Envelope" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+     </div>
+    <div class="map">
+        <h1>Route Map</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22571.702772856097!2d78.42475137719215!3d17.42476129340684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb912c99954853%3A0xd571fe3600718e23!2sNext%20Education%20India%20Pvt%20Ltd.!5e0!3m2!1sen!2sin!4v1721281040245!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="foot11">
+                <h5>ALL</h5>
+                <p>Home<p>
+            </div>
+            <div class="foot12">
+                <h5>Courses</h5>
+            </div>
+            <div class="foot13">
+                <h5>Blog</h5>
+            </div>
+            <div class="foot14">
+                <h5>About</h5>
+            </div>
+            <div class="foot14">
+                <h5>Contact Us</h5>
+            </div>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>FAQ</h5></li>
+                <li>Privacy & Policy</li>
+                <li>Terms & Services</li>
+                <li></li>
+               
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Resource</h5></li>
+                <li>FAQ</li>
+                <li>Reviews</li>
+                <li>Blogs</li>
+                <li>Return Policy</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul><li><h5>Utilities</h5></li>
+            <li>Style Guide</li>
+            <li>Error 404</li>
+            <li>Licensing</li>
+            <li>Changelog</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Connect</h5></li>
+                <li> Instagram</li>
+                <li>Facebook</li>
+                <li>YouTube</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="foot2">
+            <h5>For More Info</h5>
+            <form action="">
+                <input type="text" placeholder="Your Name"><br>
+                <input type="text" placeholder="your Mail"><br>
+                <textarea placeholder="Comment"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="jspage.css">
+    <script src="jspage.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><h1>EDUNEXT</h1></a>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="courses.html">Courses</a></li>
+            <div class="dropdown">
+                <li class="nav-item dropbtn"><a href="#">Educational_portal</a><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </li>
+                <div class="dropdown-content">
+                    <a href="#">Resourses</a>
+                    <a href="#">Classes</a>
+                    
+                  </div>
+            </div>
+            <li class="nav-item"><a href="blog.html">Blog</a></li>
+            <li class="nav-item"><button><a href="contact us.html">ContactUs</a></button></li>
+        </ul>
+    </nav>
+    <div class="head"><ul>
+        <li><a href="courses.html">HTML</a></li>
+        <li><a href="C.html">C</a></li>
+        <li><a href="java.html">JAVA</a></li>
+        <li><a href="jspage.html">JS</a></li>
+        <li><a href="php.html">PHP</a></li>
+        <li><a href="sql.html">SQL</a></li>
+        <li><a href="mangodb.html">MONGODB</a></li>
+        <li><a href="mysql.html">MYSQL</a></li>
+        <li><a href="pythom.html">Python</a></li>
+        <li><div class="search"><input type="text" placeholder="Search"><ion-icon name="search-outline"></ion-icon></div></li>
+    </ul></div>
+    <div class="jscontainer">
+        <div class="jsone">
+            <h1 class="jshead">JavaScript Tutorial</h1>
+            <img src="../images2/img3.jpg">
+            <h2 class="jshead2"><u>About javascript</u></h2>
+            <ul>
+                <li>JavaScript is the world's most popular programming language.</li>
+                <li> JavaScript is the programming language of the Web.</li>
+                <li>JavaScript is easy to learn.</li>
+                <li>This tutorial will teach you JavaScript from basic to advanced.</li>
+            </ul>
+        </div>
+        <div class="jstwo">
+            <h2 class="jshead2"><u>JavaScript Introduction</u></h2>
+            <h2 class="head3">What Can JavaScript Do?</h2>
+            <ul>
+                <li>JavaScript Can Change HTML Content</li>
+                <p>One of many JavaScript HTML methods is getElementById().
+
+                The example below "finds" an HTML element (with id="demo"),<br> and changes the element content (innerHTML) to "Hello JavaScript":</p>
+                <p id="demo">1.JavaScript can change HTML content.</p>
+                <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+                <p id="demo1">2.JavaScript can change the style of an HTML element.</p>
+                <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+                <p id="demo2">3.JavaScript can hide HTML elements.</p>
+                <button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+                <p>4.JavaScript can show hidden HTML elements.</p>
+                <p id="demo3" style="display:none">Hello JavaScript!</p>
+                <button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me!</button>
+            </ul>
+        </div>
+        <div class="jsthree">
+            <h2 class="jshead2"><u>JavaScript Comments</u></h2>
+            <ul>
+                <p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.<br>
+                JavaScript comments can also be used to prevent execution, when testing alternative code. 
+                </p>
+                <li>Single Line Comments</li>
+                <p>Single line comments start with //.<br>
+                    Any text between // and the end of the line will be ignored by JavaScript (will not be executed).<br>
+                    This example uses a single-line comment before each code line.
+                </p>
+            </ul>
+        </div>
+        <div class="jsthree">
+            <h2 class="jshead2"><u>JavaScript Operators</u></h2>
+            <ul>
+                <p>Javascript operators are used to perform different types of mathematical and logical computations.</p>
+                <li>Examples:</li>
+                <h3>1. The Assignment Operator = assigns values</h3>
+                <h3>2. The Addition Operator + adds values</h3>
+                <h3>3. The Multiplication Operator * multiplies values</h3>
+                <h3>4. The Comparison Operator > compares values</h3>
+            </ul>
+        </div>
+        <div class="jsthree">
+            <h2 class="jshead2"><u>JavaScript Data Types</u></h2>
+            <ul>
+                <h2 class="head3">JavaScript has 8 Datatypes</h2>
+                <li>String</li>
+                <li>Number</li>
+                <li>Bigint</li>
+                <li>Boolean</li>
+                <li>Undefined</li>
+                <li>Null</li>
+                <li>Symbol</li>
+                <li>Object</li>
+            </ul>
+        </div>
+        <div class="jsthree">
+            <h2 class="jshead2"><u>JavaScript Functions</u></h2>
+            <ul>
+                <h2 class="head3">JavaScript has 8 Datatypes</h2>
+                <pre>
+                    A JavaScript function is a block of code designed to perform a particular task.
+
+                    A JavaScript function is executed when "something" invokes it (calls it).
+                </pre>
+                <p id="demo4"></p>
+                <pre>
+                        '''function myFunction(p1, p2) {
+                          return p1 * p2;
+                        }
+                        
+                        let result = myFunction(4, 3);
+                        document.getElementById("demo").innerHTML = result;'''
+                </pre>
+            </ul>
+        </div>
+        <div class="jsthree">
+            <h2 class="jshead2"><u>JavaScript Objects</u></h2>
+            <ul>
+                <h2 class="head3">Real Life Objects</h2>
+                <pre>
+                    In real life, objects are things like: houses, cars, people, animals, or any other subjects.
+                </pre>
+                <li>Defineing a Object Method</li>
+                <pre class="sha1">
+                    const person = {
+                        firstName: "John",
+                        lastName: "Doe",
+                        id: 5566,
+                        fullName: function() {
+                          return this.firstName + " " + this.lastName;
+                        }
+                      };
+                      
+                      document.getElementById("demo").innerHTML = person.fullName();
+                </pre>
+            </ul>
+        </div>
+        <div class="jsthree">
+            <ul>
+                <h2 class="head3">JavaScript Object Constructors</h2>
+                <pre>
+                    Sometimes we need to create many objects of the same type.
+
+                    To create an object type we use an object constructor function.
+
+                    It is considered good practice to name constructor functions with an upper-case first letter.
+                </pre>
+                <li>Defineing a Object Constructor Functions</li>
+                <pre class="sha1">
+                    // Constructor function for Person objects
+                    function Person(first, last, age, eye) {
+                      this.firstName = first;
+                      this.lastName = last;
+                      this.age = age;
+                      this.eyeColor = eye;
+                    }
+                    
+                    // Create two Person objects
+                    const myFather = new Person("John", "Doe", 50, "blue");
+                    const myMother = new Person("Sally", "Rally", 48, "green");
+                    
+                    // Display age
+                    document.getElementById("demo").innerHTML =
+                    "My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
+                </pre>
+            </ul>
+        </div>
+        <div class="jsthree">
+            <h2 class="jshead2"><u>JavaScript Events</u></h2>
+            <pre>                HTML events are "things" that happen to HTML elements.
+
+                When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+            </pre>
+            <ul>
+                <li>Common HTML Events</li>
+                <pre class="sha1">
+                <u>Here is a list of some common HTML events:</u>
+
+                Event: 	           Description
+                onchange:	   An HTML element has been changed
+                onclick:	   The user clicks an HTML element
+                onmouseover:	   The user moves the mouse over an HTML element
+                onmouseout:	   The user moves the mouse away from an HTML element
+                onkeydown:	   The user pushes a keyboard key
+                onload:	           The browser has finished loading the page
+                </pre>
+            </ul>
+        </div>
+        <div class="jsthree">
+            <h2 class="jshead2"><u>The HTML DOM (Document Object Model)</u></h2>
+            <pre>            When a web page is loaded, the browser creates a Document Object Model of the page.
+
+            The HTML DOM model is constructed as a tree of Objects:</pre>
+            <ul>
+                <pre class="sha1">
+                    <li style="list-style-type: none;"><u>With the object model, JavaScript gets all the power it needs to create dynamic HTML:</u></li>
+
+                    1. JavaScript can change all the HTML elements in the page
+                    2. JavaScript can change all the HTML attributes in the page
+                    3. JavaScript can change all the CSS styles in the page
+                    4. JavaScript can remove existing HTML elements and attributes
+                    5. JavaScript can add new HTML elements and attributes
+                    6. JavaScript can react to all existing HTML events in the page
+                    7. JavaScript can create new HTML events in the page
+                </pre>
+            </ul>
+        </div>
+        <div class="jsfour">
+            <h1 class="jshead">For Full Course Watch Below Video</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg?si=26CQ-ShLkUANutQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="foot11">
+                <h5>ALL</h5>
+                <p>Home<p>
+            </div>
+            <div class="foot12">
+                <h5>Courses</h5>
+            </div>
+            <div class="foot13">
+                <h5>Blog</h5>
+            </div>
+            <div class="foot14">
+                <h5>About</h5>
+            </div>
+            <div class="foot14">
+                <h5>Contact Us</h5>
+            </div>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>FAQ</h5></li>
+                <li>Privacy & Policy</li>
+                <li>Terms & Services</li>
+                <li></li>
+               
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Resource</h5></li>
+                <li>FAQ</li>
+                <li>Reviews</li>
+                <li>Blogs</li>
+                <li>Return Policy</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul><li><h5>Utilities</h5></li>
+            <li>Style Guide</li>
+            <li>Error 404</li>
+            <li>Licensing</li>
+            <li>Changelog</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Connect</h5></li>
+                <li> Instagram</li>
+                <li>Facebook</li>
+                <li>YouTube</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="foot2">
+            <h5>For More Info</h5>
+            <form action="">
+                <input type="text" placeholder="Your Name"><br>
+                <input type="text" placeholder="your Mail"><br>
+                <textarea placeholder="Comment"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>

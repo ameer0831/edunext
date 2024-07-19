@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Listings</title>
+    <link rel="stylesheet" href="filter.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><h1>EDUNEXT</h1></a>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="filter.html">Courses</a></li>
+            <div class="dropdown">
+                <li class="nav-item dropbtn"><a href="#">Educational_portal</a><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </li>
+                <div class="dropdown-content">
+                    <a href="resourses.html">Resourses</a>
+                    <a href="#">Classes</a>
+                    
+                  </div>
+            </div>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item"><button><a href="#">ContactUs</a></button></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Course Listings</h1>
+        <div class="search-filter">
+            <input type="text" id="searchInput" placeholder="Search for courses...">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="STEM">FRONT-END</option>
+                <option value="Humanities">BACK-END</option>
+                <option value="Arts">DATA-BASE</option>
+            </select>
+        </div>
+        <ul id="courseList">
+            <li class="course-item" data-category="STEM"><a href="courses.html">HTML</a></li>
+            <li class="course-item" data-category="STEM"><a href="C.html">C</a></li>
+            <li class="course-item" data-category="STEM"><a href="jspage.html">JAVA SCRIPT</a></li>
+            <li class="course-item" data-category="Humanities"><a href="pythom.html">PYTHON</a></li>
+            <li class="course-item" data-category="Humanities"><a href="java.html">JAVA</a></li>
+            <li class="course-item" data-category="Humanities"><a href="php.html">PHP</a></li>
+            <li class="course-item" data-category="Arts"><a href="sql.html">SQL</a></li>
+            <li class="course-item" data-category="Arts"><a href="mysql.html">MYSQL</a></li>
+            <li class="course-item" data-category="Arts"><a href="mangodb.html">MANGODB</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1 class="head1">Prerequisites And Enrollment Options</h1>
+        <div class="course" data-course="html">
+            <h2>HTML Course</h2>
+            <p>Learn the basics of HTML.</p>
+            <button onclick="showDetails('html')">View Prerequisites</button>
+            <div class="details" id="html">
+                <p>Prerequisites:
+                    <ul>
+                        <h1>HTML Prerequisites: </h1>
+                        <li>Basic understanding of using computers.</li>
+                        <li>Familiarity with web browsers and internet usage.</li>
+                    </ul>
+                </p>
+                <button onclick="enroll('HTML Course')">Enroll Now</button>
+            </div>
+        </div>
+        <div class="course" data-course="c">
+            <h2>C Course</h2>
+            <p>Learn the basics of C.</p>
+            <button onclick="showDetails('css')">View Prerequisites</button>
+            <div class="details" id="css">
+                <ul>
+                    <h1>C Prerequisites:</h1>
+                    <li>Basic understanding of HTML.</li>
+                    <li>Knowledge of web page structure.</li>
+                </ul>
+                <button onclick="enroll('CSS Course')">Enroll Now</button>
+            </div>
+        </div>
+        <div class="course" data-course="javascript">
+            <h2>JavaScript Course</h2>
+            <p>Learn the basics of JavaScript.</p>
+            <button onclick="showDetails('javascript')">View Prerequisites</button>
+            <div class="details" id="javascript">
+                <ul>
+                    <h1>JavaScript Prerequisites:</h1>
+                    <li>Basic understanding of HTML and CSS.</li>
+                    <li>Logical thinking and basic programming concepts (optional but helpful).</li>
+                </ul>
+                <button onclick="enroll('JavaScript Course')">Enroll Now</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="foot11">
+                <h5>ALL</h5>
+                <p>Home<p>
+            </div>
+            <div class="foot12">
+                <h5>Courses</h5>
+            </div>
+            <div class="foot13">
+                <h5>Blog</h5>
+            </div>
+            <div class="foot14">
+                <h5>About</h5>
+            </div>
+            <div class="foot14">
+                <h5>Contact Us</h5>
+            </div>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>FAQ</h5></li>
+                <li>Privacy & Policy</li>
+                <li>Terms & Services</li>
+                <li></li>
+               
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Resource</h5></li>
+                <li>FAQ</li>
+                <li>Reviews</li>
+                <li>Blogs</li>
+                <li>Return Policy</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul><li><h5>Utilities</h5></li>
+            <li>Style Guide</li>
+            <li>Error 404</li>
+            <li>Licensing</li>
+            <li>Changelog</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Connect</h5></li>
+                <li> Instagram</li>
+                <li>Facebook</li>
+                <li>YouTube</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="foot2">
+            <h5>For More Info</h5>
+            <form action="">
+                <input type="text" placeholder="Your Name"><br>
+                <input type="text" placeholder="your Mail"><br>
+                <textarea placeholder="Comment"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </footer>
+    <script src="filter.js"></script>
+</body>
+</html>

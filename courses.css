@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    height: auto;
+    background-image: url(body_background.jpg);
+    
+}
+.mySlides {display: none;}
+nav h1{
+  color: black;
+}
+:root{
+    --blue1:#050C9C;
+    --blue2:#3572EF;
+    --blue3:#3ABEF9;
+    --blue4:#A7E6FF;
+}
+.hero-section{
+    margin-top: 150px;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .slideshow-container .mySlides img{
+    vertical-align: middle;
+  }
+.navbar {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--blue4);
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1px 100px; */
+}
+.nav-list {
+    list-style-type: none;
+    margin-left: -50px;
+    padding: 0;
+    display: inline-flex;
+    /* padding: 10px 100px; */
+}
+nav button{
+    height: 30px;
+    width: 150px;
+    background-color: var(--blue2);
+    border-radius: 10px;
+    color: white;
+}
+nav h1{
+    margin-left: 50px;
+    font-size: 30px;
+}
+.nav-list .nav-item{
+    margin-right: 50px;
+    list-style: none;
+}
+.nav-list .nav-item a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 18px;
+}
+.nav-list .nav-item a:hover{
+    color: var(--blue1);
+    cursor: pointer;
+}
+.nav-item i{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color:var(--blue2);
+    color:black;
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .head{
+    height:40px ;
+    width: 100%;
+    background-color: var(--blue2);
+    
+  }
+  .head ul{
+    display: flex;
+    margin-top: 100px;
+  }
+  .head ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .head ul li a:hover{
+    color:white
+  }
+  .head ul li a{
+    color: black;
+  }
+  .search{
+    height: 25px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    
+    border-radius: 5px;
+  }
+  .search ion-icon{
+   font-size: 20px;
+   margin-left: 20px;
+   margin-top: 2px;
+  }
+  .search input{
+    outline: none;
+    
+    margin-left: 10px;
+    width: 240px;
+  }
+  span{
+    color: #050C9C;
+  }
+  .content1{
+    padding: 30px;
+  }
+
+  .content1 h1{
+    font-size: 70px;
+    margin-left: 450px;
+    color: #050C9C;
+  }
+  .content1 h2{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .content1 p{
+    font-size: 20px;
+    margin-left: 100px;
+  }
+  .content1 p span{
+    font-size: 50px;
+    color: #050C9C;
+    margin-right: 10px;
+  }
+  .content2 h2{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .content2 p{
+    padding: 20px;
+    font-size: 16px;
+    margin-left: 200px;
+  }
+  .content2 h3 , h4{
+    font-size: 20px;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  .examples{
+    margin-top: 20px;
+    height: 300px;
+  }
+  .example span{
+    color: black;
+    
+  }
+  .exapmple p{
+    margin-top: -10px;
+    font-size: 16px;
+    margin-left: 200px;
+  }
+  .content3 h1{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .content3 p{
+    padding: 20px;
+    font-size: 16px;
+    margin-left: 200px;
+  }
+  .content4 h1{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .content4 p{
+    padding: 20px;
+    font-size: 16px;
+    margin-left: 200px;
+  }
+  .content4 li{
+    padding: 20px;
+    font-size: 16px;
+    margin-left: 200px;
+  }
+  .content8 h1{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .content8 p{
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 200px;
+  }
+  .content8 li{
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 200px;
+  }
+  .content8 h2{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .video h1{
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 40px;
+  }
+  iframe{
+    margin-left: 300px;
+    margin-top: 30px;
+  }
+  footer{
+    height: 400px;
+    width: 100%;
+    background-color: #050C9C;
+    color: whitesmoke;
+    display: flex;
+    margin-top: 60px;
+    }
+    footer ul li{
+    list-style: none;
+    margin-top: 20px;
+    }
+    footer .foot{
+    margin-left: 50px;
+    }
+    footer .foot h5{
+    font-size: 20px;
+    }
+    .foot11{
+    margin-top: 20px;
+    }
+    .foot12{
+    margin-top: 20px;
+    }
+    .foot12 p{
+    margin-top: 10px;
+    }
+    .foot13{
+    margin-top: 20px;
+    }
+    .foot13 p{
+    margin-top: 10px;
+    }
+    .foot2 h5{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+    }
+    .foot2 form{
+    margin-left: 70px;
+    
+    }
+    .foot h5{
+    margin-top: 17px;
+    font-size: 20px;
+    
+    }
+    form input{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    color: rgb(60, 22, 231);
+    border: 1px white solid;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    
+    }
+    form textarea{
+        height: 100px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 10px;
+    }
+    form button{
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(243, 242, 242);
+    color: rgb(3, 3, 3);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 100%;
+    }
+    footer hr{
+    color: white;
+    margin-top: 50px;
+    }

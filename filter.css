@@ -125,6 +125,17 @@ nav h1{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.container{
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0 );
+    }
+ }
+
+
 h1 {
     text-align: center;
     margin-bottom: 20px;

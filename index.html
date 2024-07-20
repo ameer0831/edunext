@@ -4,7 +4,511 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    height: auto;
+}
+.mySlides {display: none;}
+
+:root{
+    --blue1:#050C9C;
+    --blue2:#3572EF;
+    --blue3:#3ABEF9;
+    --blue4:#A7E6FF;
+}
+.hero-section{
+    margin-top: 150px;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .slideshow-container .mySlides img{
+    vertical-align: middle;
+  }
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 18px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+.navbar {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--blue4);
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1px 100px; */
+}
+.nav-list {
+    list-style-type: none;
+    margin-left: -50px;
+    padding: 0;
+    display: inline-flex;
+    /* padding: 10px 100px; */
+}
+nav button{
+    height: 30px;
+    width: 150px;
+    background-color: var(--blue2);
+    border-radius: 10px;
+    color: white;
+}
+nav h1{
+    margin-left: 50px;
+    font-size: 30px;
+    color: black;
+}
+.nav-list .nav-item{
+    margin-right: 50px;
+    list-style: none;
+}
+.nav-list .nav-item a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 18px;
+}
+.nav-list .nav-item a:hover{
+    color: var(--blue1);
+    cursor: pointer;
+}
+.nav-item i{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color:var(--blue2);
+    color:black;
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .html{ 
+    background-color: rgb(17, 17, 17);
+    height: 400px;
+    width: 450px;
+    background-repeat: no-repeat;   
+    text-align: center;
+}
+.html a{
+    color: rgb(250, 249, 247);
+    text-decoration: none;
+
+}
+.html h3{
+   font-size: 40px;
+   margin-left: -20px;
+}
+.line{
+    background-color: rgb(252, 249, 249);
+    width: 300px;
+    height: 2px;
+    margin-top: 40px;
+}
+.line p{
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-top: 40px;
+    margin-left: 15px;
+    margin-top: -20px;
+}
+.java{
+    background-color: rgb(26, 29, 27);
+   /* background-image: url(java\ icon.png);
+   background-size: cover; */
+    height: 400px;
+    width: 450px;
+    text-align: center;
+ 
+
+}
+.java a{
+    color: rgb(248, 247, 245);
+    text-decoration: none;
+}
+.java h3{
+   
+   font-size: 40px;
+   margin-left: 15px;
+   text-align: left;
+}
+.line1{
+    background-color: rgb(252, 249, 249);
+    width: 300px;
+    height: 2px;
+    margin-top: 40px;
+}
+.line1 p{
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-top: 40px;
+    margin-top: -20px;
+    
+}
+.cplus{
+    background-color: black;
+    height: 400px;
+    width: 450px;
+    text-align: center;
+
+}
+.cplus a{
+    color: rgb(250, 249, 246);
+    text-decoration: none;
+}
+.cplus h3{
+   font-size: 40px;
+   margin-left: 15px;
+   text-align: left;
+}
+.line2{
+    background-color: rgb(252, 249, 249);
+    width: 300px;
+    height: 2px;
+    margin-top: 40px;
+}
+
+.line2 p{
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-top: 40px;
+    margin-top: -20px;
+}
+.step1{
+    display: flex;
+    column-gap: 5px;
+}
+
+.cyber{
+   background-color: black;
+    height: 400px;
+    width: 450px;
+    text-align: center;
+
+}
+.cyber a{
+    color: rgb(250, 249, 246);
+    text-decoration: none;
+    
+}
+.cyber h3{
+   font-size: 40px;
+   margin-left: 15px;
+   text-align: left;
+}
+.line3{
+    background-color: rgb(252, 249, 249);
+    width: 300px;
+    height: 2px;
+    margin-top: 40px;
+}
+.line3 p{
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-top: 40px;
+    margin-top: -20px;
+}
+.data{
+   background-color: black;
+    height: 400px;
+    width: 450px;
+    text-align: center;
+
+}
+.data a{
+    color: rgb(250, 249, 246);
+    text-decoration: none;
+    
+}
+.data h3{
+   font-size: 40px;
+   margin-left: 15px;
+   text-align: left;
+}
+.line4{
+    background-color: rgb(252, 249, 249);
+    width: 300px;
+    height: 2px;
+    margin-top: 40px;
+}
+.line4 p{
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-top: 40px;
+    margin-top: -20px;
+}
+.ai{
+    background-color: black;
+    height: 400px;
+    width: 450px;
+    text-align: center;
+
+}
+.ai a{
+    color: rgb(250, 249, 246);
+    text-decoration: none;
+}
+.ai h3{
+   font-size: 40px;
+   margin-left: 15px;
+   text-align: left;
+}
+.line5{
+    background-color: rgb(252, 249, 249);
+    width: 300px;
+    height: 2px;
+    margin-top: 40px;
+    
+}
+.line5 p{
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-top: 40px;
+    margin-top: -20px;
+}
+.step2{
+    display: flex;
+    column-gap: 5px;
+    padding-top: 10px;
+}
+.angular{
+    background-color: black;
+    height: 400px;
+    width: 450px;
+    text-align: center;
+}
+.angular a{
+    color: rgb(250, 249, 246);
+    text-decoration: none;
+}
+.angular h3{
+   font-size: 40px;
+   text-align: left;
+}
+.line6{
+    background-color: rgb(252, 249, 249);
+    width: 300px;
+    height: 2px;
+    margin-top: 40px;
+}
+.line6 p{
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-top: 40px;
+}
+.node{
+    background-color: black;
+    height: 400px;
+    width: 450px;
+    text-align: center;
+
+}
+.node a{
+    color: rgb(250, 249, 246);
+    text-decoration: none;
+}
+.node h3{
+   font-size: 40px;
+   text-align: left;
+}
+.line7{
+    background-color: rgb(252, 249, 249);
+    width: 300px;
+    height: 2px;
+    margin-top: 40px;
+}
+.line7 p{
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-top: 40px;
+}
+.react{
+   background-color: black;
+    height: 400px;
+    width: 450px;
+
+}
+.react a{
+    color: rgb(250, 249, 246);
+    text-decoration: none;
+}
+.react h3{
+   font-size: 40px;
+   text-align: left;
+}
+.line8{
+    background-color: rgb(252, 249, 249);
+    width: 300px;
+    height: 2px;
+    margin-top: 40px;
+}
+.line8 p{
+    font-size: 20px;
+    color: blanchedalmond;
+    padding-top: 40px;
+}
+.step3{
+    display: flex;
+    column-gap: 5px;
+}
+.success1{
+margin-top: 40px;
+}
+
+footer{
+height: 400px;
+margin-top: 20px;
+width: 100%;
+background-color: #050C9C;
+color: whitesmoke;
+display: flex;
+}
+footer ul li{
+list-style: none;
+margin-top: 20px;
+}
+footer .foot{
+margin-left: 50px;
+}
+footer .foot h5{
+font-size: 20px;
+}
+.foot11{
+margin-top: 20px;
+}
+.foot12{
+margin-top: 20px;
+}
+.foot12 p{
+margin-top: 10px;
+}
+.foot13{
+margin-top: 20px;
+}
+.foot13 p{
+margin-top: 10px;
+}
+.foot2 h5{
+margin-top: 20px;
+font-size: 20px;
+margin-left: 70px;
+}
+.foot2 form{
+margin-left: 70px;
+
+}
+.foot h5{
+margin-top: 17px;
+font-size: 20px;
+
+}
+form input{
+margin-top: 20px;
+height: 40px;
+width: 300px;
+color: rgb(60, 22, 231);
+border: 1px white solid;
+border-radius: 10px;
+outline: none;
+padding: 10px;
+
+}
+form textarea{
+    height: 100px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+form button{
+margin-top: 30px;
+height: 30px;
+width: 200px;
+background-color: rgb(243, 242, 242);
+color: rgb(3, 3, 3);
+border: 1px white solid;
+border-radius: 10px;
+font-size: 100%;
+}
+footer hr{
+color: white;
+margin-top: 50px;
+}
+
+
+    </style>
 </head>
 
 <body>
@@ -13,13 +517,13 @@
         <ul class="nav-list">
             <li class="nav-item"><a href="index.html">HOME</a></li>
             <li class="nav-item"><a href="about.html">About</a></li>
-            <li class="nav-item"><a href="courses.html">Courses</a></li>
+            <li class="nav-item"><a href="filter.html">Courses</a></li>
             <div class="dropdown">
                 <li class="nav-item dropbtn"><a href="#">Educational_portal</a><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
                 </li>
                 <div class="dropdown-content">
                     <a href="resourses.html">Resourses</a>
-                    <a href="#">Classes</a>
+                    <a href="clases.html">Classes</a>
                     
                   </div>
             </div>
@@ -41,7 +545,7 @@
         </div>
       
         <div class="mySlides fade">
-          <h1>Top Educators:</h1>
+          <h1 >Top Educators:</h1>
           <div class="numbertext"></div>
           <img src="images/l31.avif" style="width:24%" height="370px">
           <img src="images/l29.jpg" style="width:24%" height="370px">
@@ -67,7 +571,7 @@
         </div>
       </div>
       <div class="htm">
-        <h1>Course Categories</h1>
+        <h1 style="margin: 30px; padding-left: 20px; font-size: 50px;">Course Categories</h1>
     </div>
     <div class="step1">
     <div class="html">
@@ -121,7 +625,7 @@
           </div>
       </div>
     </div>
-    <h1>Featured Courses</h1>
+    <h1 style="margin: 30px; padding-left: 20px; font-size: 50px;">Featured Courses</h1>
     <div class="step3">
     <div class="angular">
         <img src="images/anguar3.png" height="200px" width="300px">
@@ -145,7 +649,7 @@
         </div>
     </div>
 </div>
-<h1>Student Testimonial</h1>
+<h1  style="margin: 30px; font-size: 50px; " >Student Testimonial</h1>
 <div class="success">
 <img src="images/success1.jpg" height="850px" width="1300px">
 </div>
@@ -218,8 +722,26 @@
 </footer>
 
 
-      <script src="edunext.js">
+      <script >
+        let slideIndex = 0;
+        showSlides();
         
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); 
+        }
         </script>
    </body>
 </html>

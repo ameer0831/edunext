@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="class.css"> -->
+     <style>
+
+nav h1{
+    color: black;
+  }
+  :root{
+      --blue1:#050C9C;
+      --blue2:#3572EF;
+      --blue3:#3ABEF9;
+      --blue4:#A7E6FF;
+  }.navbar {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--blue4);
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1px 100px; */
+}
+.nav-list {
+    list-style-type: none;
+    margin-left: -50px;
+    padding: 0;
+    display: inline-flex;
+    /* padding: 10px 100px; */
+}
+nav button{
+    height: 30px;
+    width: 150px;
+    background-color: var(--blue2);
+    border-radius: 10px;
+    color: white;
+}
+nav h1{
+    margin-left: 50px;
+    font-size: 30px;
+}
+.nav-list .nav-item{
+    margin-right: 50px;
+    list-style: none;
+}
+.nav-list .nav-item a{
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    font-size: 18px;
+}
+.nav-list .nav-item a:hover{
+    color: var(--blue1);
+    cursor: pointer;
+}
+.nav-item i{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color:var(--blue2);
+    color:black;
+}
+.feature-section img{
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0);
+    }
+ }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+  
+.feature-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+   }
+   
+   .feature-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    max-width: 45%;
+   }
+   
+   .feature-card img {
+    width: 100%;
+    display: block;
+   }
+   
+   .feature-description {
+    padding: 20px;
+    text-align: center;
+   }
+   
+   .feature-description h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+   }
+   
+   .feature-description p {
+    font-size: 1em;
+    color: #555;
+   }
+   .read{
+    margin-top: 120px;
+   }
+   .read h1{
+       text-align: center;
+       font-size: 40px;
+    
+   }
+   .read p{
+       text-align: center;
+       font-size: 20px;
+     
+       
+   }
+   .live{
+    display: flex;
+    column-gap: 100px;
+    margin-top: 50px;
+   }
+   .para h2{
+    font-size: 30px;
+    margin-left:5px ;
+   }
+   .para p{
+    font-size: 20px;
+    margin-left: 10px;
+   }
+   .video{
+    margin-right: 10px;
+   }
+   .feature h3{
+    text-align: center;
+    font-size: 30px;
+   }
+   .feature img{
+    margin-left: 100px;
+   }
+   .feature h2{
+    margin-left: 50px;
+    font-size: 30px;
+   }
+   .feature p{
+    margin-left: 60px;
+    font-size: 20px;
+   }
+   footer{
+    height: 400px;
+    width: 100%;
+    background-color: #050C9C;
+    color: whitesmoke;
+    display: flex;
+    }
+    footer ul li{
+    list-style: none;
+    margin-top: 20px;
+    }
+    footer .foot{
+    margin-left: 50px;
+    }
+    footer .foot h5{
+    font-size: 20px;
+    }
+    .foot11{
+    margin-top: 20px;
+    }
+    .foot12{
+    margin-top: 20px;
+    }
+    .foot12 p{
+    margin-top: 10px;
+    }
+    .foot13{
+    margin-top: 20px;
+    }
+    .foot13 p{
+    margin-top: 10px;
+    }
+    .foot2 h5{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+    }
+    .foot2 form{
+    margin-left: 70px;
+    
+    }
+    .foot h5{
+    margin-top: 17px;
+    font-size: 20px;
+    
+    }
+    form input{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    color: rgb(60, 22, 231);
+    border: 1px white solid;
+    border-radius: 10px;
+    outline: none;
+    
+    
+    }
+    form textarea{
+        height: 100px;
+        width: 300px;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    form button{
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(243, 242, 242);
+    color: rgb(3, 3, 3);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 100%;
+    }
+    footer hr{
+    color: white;
+    margin-top: 50px;
+    }
+     </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a  style="text-decoration: none;" href="index.html"><h1>EDUNEXT</h1></a>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">HOME</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="filter.html">Courses</a></li>
+            <div class="dropdown">
+                <li class="nav-item dropbtn"><a href="#">Educational_portal</a><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                </li>
+                <div class="dropdown-content">
+                    <a href="resourses.html">Resourses</a>
+                    <a href="clases.html">Classes</a>
+                    
+                  </div>
+            </div>
+            <li class="nav-item"><a href="blog.html">Blog</a></li>
+            <li class="nav-item"><button><a href="contact us.html">ContactUs</a></button></li>
+        </ul>
+    </nav>
+<div class="read">
+    <h1>Manage your calendar<br> 
+        with switching education</h1>
+        <p>Coordinate events, manage task timelines, and plan projects<br>
+            in one customizable view to keep your schedule centralized.</p>
+ </div>
+<div class="feature-section">
+    <div class="feature-card">
+        <img src="images/calder1.avif" alt="Calendar View">
+        <div class="feature-description">
+            <h2>View work your way</h2>
+            <p>Switch between daily, weekly, or monthly views to focus on what matters and use advanced filters to highlight key tasks.</p>
+        </div>
+    </div>
+    <div class="feature-card">
+        <img src="images/calder2.avif" alt="Task Management">
+        <div class="feature-description">
+            <h2>Track and manage tasks visually</h2>
+            <p>Drag and drop to adjust task durations and dependencies, making changes as needed to keep your work on track.</p>
+        </div>
+    </div>
+</div>
+  <div class="live">
+    <div class="para">
+    <h2>Get started with live streaming</h2>
+      
+    <p>Live streaming lets you interact with your audience in real time with a video feed, chat, and more.</p>
+    </div>
+    <div class="video">
+ <iframe width="620" height="315" src="https://www.youtube.com/embed/Pyv0tMm5i_w?si=3dZrsC_q41zDG4Vy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ </div>
+  </div>
+    <div class="feature">
+        <h3>interactive website features to engage<br> and convert e-commerce visitors</h3>
+        <img src="images/ngimg.jfif" height="500px" width="1000px">
+        <h2>Quizzes</h2>
+        <p>Quizzes are a fun way for website visitors to interact with your brand. And they don’t require the customer to put in as much effort as they do when completing surveys or forms.  </p>
+        <h2>Surveys and forms</h2>
+        <p>Surveys and contact forms are interactive elements that help you learn about your site visitors. Use this knowledge to optimize your website user experience. </p>
+        <h2>Videos and image galleries</h2>
+        <p>Videos and image galleries are an easy way to make your website more interactive. 
+
+            Adding videos to your pages can increase time on page significantly. Wistia found that people spent on average 1.4x longer on pages with video than without. This was a difference of almost two minutes per page. 🤯 </p>
+         <h2> Maps</h2>  
+         <p>Customers can see exactly where you are based by interacting with the map. They can also click on your Google Maps business profile to get directions or discover company information. This makes it easier for people to find your business and buy from you. </p> 
+         <h2> Live chat</h2>
+         <p>Live chat widgets provide an incredibly interactive experience. And most tools allow you to customize the content in the widget based on the page it’s on. </p>
+         <h2>Social media</h2>
+         <p>There are many ways to use social media to increase website interaction. 
+
+            The simplest method is to add share buttons. With these in place, visitors who enjoy your content can share it with a single click.</p>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="foot11">
+                <h5>ALL</h5>
+                <p>Home<p>
+            </div>
+            <div class="foot12">
+                <h5>Courses</h5>
+            </div>
+            <div class="foot13">
+                <h5>Blog</h5>
+            </div>
+            <div class="foot14">
+                <h5>About</h5>
+            </div>
+            <div class="foot14">
+                <h5>Contact Us</h5>
+            </div>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>FAQ</h5></li>
+                <li>Privacy & Policy</li>
+                <li>Terms & Services</li>
+                <li></li>
+               
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Resource</h5></li>
+                <li>FAQ</li>
+                <li>Reviews</li>
+                <li>Blogs</li>
+                <li>Return Policy</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul><li><h5>Utilities</h5></li>
+            <li>Style Guide</li>
+            <li>Error 404</li>
+            <li>Licensing</li>
+            <li>Changelog</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><h5>Connect</h5></li>
+                <li> Instagram</li>
+                <li>Facebook</li>
+                <li>YouTube</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+        <div class="foot2">
+            <h5>For More Info</h5>
+            <form action="">
+                <input type="text" placeholder="Your Name"><br>
+                <input type="text" placeholder="your Mail"><br>
+                <textarea placeholder="Comment"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>

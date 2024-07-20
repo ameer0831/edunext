@@ -5,6 +5,16 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+.html{
+    transform: translate(-100%);
+    animation: slideIn 2s forwards;
+ }
+ @keyframes slideIn{
+    to{
+     transform: translateY(0 );
+    }
+ }
 nav h1{
     color: black;
   }

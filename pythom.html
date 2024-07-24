@@ -347,6 +347,50 @@ footer hr{
 .sir{
     margin-top: 100px;
 }
+
+.pycontent h1{
+    font-size: 55px;
+    padding: 40px 0px;
+    color: #3572EF;
+    text-align: center;
+}
+.div1 ul li{
+    list-style: disc;
+    font-size: 28px;
+    padding: 10px 0px;
+    margin-left: 50px;
+}
+.div1 ul li:hover{
+    color: var(--blue2);
+    border: bottom 8px rebeccapurple;
+}
+#btnone{
+    background-color: #3572EF;
+    padding: 16px;
+    margin: 20px;
+    font-size:22px;
+    color: white;
+    border-radius: 6px;
+}
+#btnone:hover{
+    background-color:#050C9C;
+}
+#btnone a{
+    color: white;
+}
+.water-drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200px;
+    color: rgb(207, 202, 202);
+    margin-top: 60px;
+    z-index: -1;
+    position: fixed;
+    margin-left: 200px;
+    rotate  : -22deg;
+}
 </style>
 <body>
     <nav class="navbar">
@@ -354,13 +398,13 @@ footer hr{
         <ul class="nav-list">
             <li class="nav-item"><a href="index.html">HOME</a></li>
             <li class="nav-item"><a href="about.html">About</a></li>
-            <li class="nav-item"><a href="courses.html">Courses</a></li>
+            <li class="nav-item"><a href="filter.html">Courses</a></li>
             <div class="dropdown">
                 <li class="nav-item dropbtn"><a href="#">Educational_portal</a><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
                 </li>
                 <div class="dropdown-content">
                     <a href="resourses.html">Resourses</a>
-                    <a href="clases.html">Classes</a>
+                    <a href="courses.html">Classes</a>
                     
                   </div>
             </div>
@@ -377,149 +421,52 @@ footer hr{
         <li><a href="sql.html">SQL</a></li>
         <li><a href="mangodb.html">MONGODB</a></li>
         <li><a href="mysql.html">MYSQL</a></li>
-        <li><a href="pythom.html">Python</a></li>
+        <li><a href="pythom.html">PYTHON</a></li>
         <li><div class="search"><input type="text" placeholder="Search"><ion-icon name="search-outline"></ion-icon></div></li>
     </ul></div>
-   <div class="sir">
-    <div class="intro">
-        <h1>Python Introduction</h1>
-        <img src="images/python.jfif"  height="300px" width="400px">
-        <h3>What is Python</h3>
-        <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
-        <li>Easy to Learn and Use: Python's straightforward syntax makes it an excellent language for beginners and allows developers to write less code to accomplish tasks.</li>
-
-          <li>Interpreted Language: Python code is executed line by line, which makes debugging easier and more efficient.</li>
-            
-          <li>Versatile and Powerful: Python is used in various domains such as web development (with frameworks like Django and Flask), data science (with libraries like Pandas and NumPy), artificial intelligence, machine learning, automation, and more.</li>
-            
-          <li>Extensive Standard Library: Python comes with a large standard library that supports many common programming tasks such as connecting to web servers, reading and modifying files, and working with data formats.</li>
-            
-          <li> Community and Ecosystem: Python has a large and active community that contributes to a vast ecosystem of third-party packages and libraries, enhancing its functionality.</li>
-            
-          <li> Cross-Platform: Python is available on various platforms including Windows, macOS, and Linux, making it a versatile choice for developers.</li>
+    <div class="pycontent">
+        <div class="water-drop">PYTHON</div>
+        <h1>Python Tutorial</h1>
+        <div class="div1">
+            <ul>
+                <li><a>Python Syntax</a></li>
+                <li>Python Comments</li>
+                <li>Python Variables</li>
+                <li>Python Data Types</li>
+                <li>Python Numbers</li>
+                <li>Python Casting</li>
+                <li>Python Strings</li>
+                <li>Python Booleans</li>
+                <li>Python Operators</li>
+                <li>Python Lists</li>
+                <li>Python Tuples</li>
+                <li>Python Sets</li>
+                <li>Python Dictionaries</li>
+                <li>Python If...Else</li>
+                <li><a>Python While Loops</a></li>
+                <li>Python For Loops</li>
+                <li>Python Functions</li>
+                <li>Python Lambda</li>
+                <li>Python Arrys</li>
+                <li>Python Class</li>
+                <li>Python Inheritance</li>
+                <li>Python Iterators</li>
+                <li>Python Polymorphism</li>
+                <li>Python Scope</li>
+                <li>Python Modules</li>
+                <li>Python Dates</li>
+                <li>Python Math</li>
+                <li>Python JOSN</li>
+                <li>Python RegEx</li>
+                <li>Python PIP</li>
+                <li>Python Try...Except</li>
+                <li>Python String Formatting</li>
+                <li>Python Dates</li>
+                <li>Python Numpy</li>
+            </ul>
+            <button id="btnone"><a href="https://www.w3schools.com/python/default.asp" target="_self">Full Course Click Here</a></button>
+        </div>
     </div>
-    <div class="variable">
-        <h1>Variables</h1>
-        <p>Variables are containers for storing data values.</p>
-    </div>
-    <div class="create">
-        <p>Creating Variables</p>
-    <li>Python has no command for declaring a variable.</li>
-        <li>A variable is created the moment you first assign a value to it.</li>
-    </div>
-    <div class="vnames">
-        <h1>Variable Names</h1>
-        <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
-        <li>A variable name must start with a letter or the underscore character</li>
-        <li>A variable name cannot start with a number</li>
-        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
-        <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
-        <li>A variable name cannot be any of the Python keywords.</li>
-    </div>
-    <div class="pdatatypes">
-        <h1>Python Data Types</h1>
-        <p>Built-In Data Types</p>
-       <li>In programming, data type is an important concept.</li> 
-<li>Variables can store data of different types, and different types can do different things.</li>
-<p>Python has the following data types built-in by default, in these categories:</p>
-    </div>
-    <div class="pvalues">
-<li>  Text Type: str</li>  
-<li> Numeric Types:	int, float, complex</li>  
-<li> Sequence Types:	list, tuple, range</li>  
-<li> Mapping Type:	dict</li>  
-<li> Set Types:	set, frozenset</li>  
-<li> Boolean Type:	bool</li>  
-<li> Binary Types:	bytes, bytearray, memoryview</li>  
-<li> None Type:	NoneType</li>  
-</div>
-<div class="plists">
-    <h1>Python Lists</h1>
-    <h2>List</h2>
-    <p>Lists are used to store multiple items in a single variable.</p>
-    <p>Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.</p>
-</div>
-<div class="list">
-   <h1>List Items</h1>
-   <p>List items are ordered, changeable, and allow duplicate values.</p>
-
-    <p>List items are indexed, the first item has index [0], the second item has index [1] etc.</p>
-</div>
-<div class="ordered">
-    <h1>Ordered</h1>
-   <p> When we say that lists are ordered, it means that the items have a defined order, and that order will not change.</p>
-
-   <p> If you add new items to a list, the new items will be placed at the end of the list.</p>
-</div>
-<div class="pfunctions">
-    <h1>Python Functions</h1>
-    <p>A function is a block of code which only runs when it is called.</p>
-
-    <p> You can pass data, known as parameters, into a function.</p>
-        
-        <p>A function can return data as a result.</p>
-</div>
-<div class="parrays">
-    <h1>What are Python Arrays?</h1>
-    <p>Arrays are a fundamental data structure, and an important part of most programming languages.<br> In Python, they are containers which are able to store more than one item at the same time.<br> Specifically, they are an ordered collection of elements with every<br> value being of the same data type.</p>
-
-<h3>Advantages of Array in Python</h3>
-   <li>Efficient access and handling.</li>
-   <li>Versatility with different data types.</li>
-   <li>Built-in functions for manipulation.</li>
-   <li>Optimized memory usage.</li>
-   <li>Fast data retrieval.</li>
-   <li>Supports various data structures.</li>
-   <li>Simplified iteration.</li>
-   <li>Widely used and supported.</li>
-</div>
-<div class="loops">
-    <h1>When to use For Loop and While Loop in Python?</h1>
-    <p>To decide when should you use for loop and when to use while loop, you can think of these situations and you will the answer:</p>
-    <h2>For Loop</h2>
-    <li>When there is a need of iteration over elements that are in sequence like lists, tuples, strings or dictionaries.</li>
-<li>Use for loops when a known number or a finite number of iteration is required.</li>
-<li>Another situation when you want that each element of a sequence should pass through iteration one by one.</li>
-<li>for loops can also be used when a task requires a sequential access of elements of a sequence.</li>
-<h2>While Loop</h2>
-<li>When there is a need to repeat execution of a block of code until a specified condition becomes False.</li>
-<li>Use while loops when the number of iteration is not determined.</li>
-<li>while loops are can be used when there is a need to repeat execution based on a condition.</li>
-<li> When dynamic adaptation is required based upon condition that may change.</li>
-</div>
-<div class="python_video">
-    <div class="poperators">
-        <h1>Python Operators</h1>
-        <p>Operators are used to perform operations on variables and values.</p>
-        <p>Python divides the operators in the following groups:</p>
-        <li>Arithmetic operators</li>
-        <li>Assignment operators</li>
-        <li>Comparison operators</li>
-        <li>Logical operators</li>
-        <li>Identity operators</li>
-        <li>Membership operators</li>
-        <li>Bitwise operators</li>
-    </div>
-    <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y8Tko2YC5hA?si=VixFKnGjU9WQS5b8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-</div>
-<div class="pinher">
-<h1>Python Inheritance</h1>
-<p>Inheritance allows us to define a class that inherits all the methods and properties from another class.</p>
-
-    <p>Parent class is the class being inherited from, also called base class.</p>
-    
-    <p>Child class is the class that inherits from another class, also called derived class.</p>
-</div>
-<div class="pclcobj">
-    <h1>Python Classes/Objects</h1>
-    <p>Python is an object oriented programming language.</p>
-
-<p>Almost everything in Python is an object, with its properties and methods.</p>
-
-<p>A Class is like an object constructor, or a "blueprint" for creating objects.</p>
-</div>
     <footer>
         <div class="foot">
             <div class="foot11">

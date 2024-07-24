@@ -3,28 +3,416 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
-    <link rel="stylesheet" href="jspage.css">
-    <script src="jspage.js"></script>
+    <title>Document</title>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;text-decoration: none;
+        border: 0;
+    }
+    nav h1{
+  color: black;
+}
+:root{
+    --blue1:#050C9C;
+    --blue2:#3572EF;
+    --blue3:#3ABEF9;
+    --blue4:#A7E6FF;
+}
+    .JAVASCRIPT p{
+font-size: 250%;
+    }
+    .navbar {
+height: 100px;
+position: fixed;
+top: 0;
+width: 100%;
+background-color: var(--blue4);
+overflow: hidden;
+z-index: 1000;
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* padding: 1px 100px; */
+}
+.nav-list {
+list-style-type: none;
+margin-left: -50px;
+padding: 0;
+display: inline-flex;
+/* padding: 10px 100px; */
+}
+nav button{
+height: 30px;
+width: 150px;
+background-color: var(--blue2);
+border-radius: 10px;
+color: white;
+}
+nav h1{
+margin-left: 50px;
+font-size: 30px;
+}
+.nav-list .nav-item{
+margin-right: 50px;
+list-style: none;
+}
+.nav-list .nav-item a{
+text-decoration: none;
+color: rgb(43, 43, 43);
+font-size: 18px;
+}
+.nav-list .nav-item a:hover{
+color: var(--blue1);
+cursor: pointer;
+}
+.nav-item i{
+font-size: 20px;
+padding-left: 10px;
+}
+.dropdown-content{
+display: none;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+background-color:var(--blue2);
+color:black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.head{
+    height:40px ;
+    width: 100%;
+    background-color: var(--blue2);
+    
+  }
+  .head ul{
+    display: flex;
+    margin-top: 100px;
+    
+  }
+  .head ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .head ul li a:hover{
+    color:white
+  }
+  .head ul li a{
+    color: black;
+  }
+  .search{
+    height: 25px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    
+    border-radius: 5px;
+  }
+  .search ion-icon{
+   font-size: 20px;
+   margin-left: 20px;
+   margin-top: 2px;
+  }
+  .search input{
+    outline: none;
+    
+    margin-left: 10px;
+    width: 240px;
+  }
+
+ 
+main {
+    padding: 20px;
+}
+.a1{
+    margin-top: 10px;
+    background-color: rgb(18, 20, 20);
+    width: 250px;
+    height: 50px;
+    
+}
+.a1 a{
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+
+}
+ a:hover .a1 {
+  background-color: yellow;
+}
+.intro h1{
+ text-align: left;
+}
+.intro h3{
+ text-align: left;
+ font-size: 20px;
+}
+.intro p{
+    text-align: left;
+    font-size: 20px;
+}
+.intro li{
+    text-align: left;
+    padding: 10px;
+}
+.variable h1{
+    font-size: 50px;
+    text-align: left;
+}
+.variable p{
+    text-align: left;
+    font-size: 20px;
+}
+.create p{
+    font-size: 20px;  
+    text-align: left;
+}
+.create li{
+    text-align: left;
+    padding: 10px;
+}
+.vnames h1{
+text-align: left;
+}
+.vnames p{
+text-align: left;
+font-size: 20px;
+}
+.vnames h1{
+text-align: left;
+}
+.vnames li{
+text-align: left;
+padding: 10px;
+}
+.pdatatypes{
+    text-align: left;
+}
+.pdatatypes li{
+    padding: 10px;
+}
+.pdatatypes p{
+    font-size: 20px;
+}
+.pvalues li{
+    padding: 15px;
+    text-align: left;
+}
+.plists{
+    text-align: left;
+}
+.plists p{
+text-align: left;
+}
+.plists h2{
+text-align: left;
+}
+.list{
+    text-align: left;
+}
+.list p{
+    text-align: left;
+}
+.ordered{
+    text-align: left;
+}
+.ordered p{
+    text-align: left;
+}
+.pfunctions{
+    text-align: left;
+}
+.pfunctions p{
+    text-align: left;
+}
+.parrays{
+    text-align: left;
+}
+.parrays h3{
+    text-align: left;
+}
+.parrays li{
+    padding: 10px;
+}
+.loops{
+    text-align: left;
+}
+.loops li{
+    padding: 10px;
+}
+.JAVASCRIPT_video{
+    display:flex;
+    justify-content: space-between;
+}
+.poperators{
+    text-align: left;
+}
+.poperators li{
+    padding: 10px;
+}
+.video{
+    margin-right: 150px;
+    margin-top: 100px;
+}
+.pinher{
+    text-align: left;
+}
+.pclcobj{
+    text-align: left;
+}
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: #050C9C;
+    color: whitesmoke;
+    display: flex;
+}
+footer ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+footer .foot{
+    margin-left: 50px;
+}
+footer .foot h5{
+    font-size: 20px;
+}
+.foot11{
+    margin-top: 20px;
+}
+.foot12{
+    margin-top: 20px;
+}
+.foot12 p{
+    margin-top: 10px;
+}
+.foot13{
+    margin-top: 20px;
+}
+.foot13 p{
+    margin-top: 10px;
+}
+.foot2 h5{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+}
+textarea{
+    border-radius: 4px;
+}
+.foot2 form{
+    margin-left: 70px;
+
+}
+.foot h5{
+    margin-top: 17px;
+    font-size: 20px;
+  
+}
+form input{
+    margin-top: 20px;
+    height: 30px;
+    width: 200px;
+   color: rgb(60, 22, 231);
+    border: 1px white solid;
+    border-radius: 10px;
+    outline: none;
+}
+form button{
+    margin-top: 30px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(243, 242, 242);
+    color: rgb(3, 3, 3);
+    border: 1px white solid;
+    border-radius: 10px;
+    font-size: 100%;
+}
+footer hr{
+    color: white;
+    margin-top: 50px;
+}
+.sir{
+    margin-top: 100px;
+}
+
+.pycontent h1{
+    font-size: 55px;
+    padding: 40px 0px;
+    color: #3572EF;
+    text-align: center;
+}
+.div1 ul li{
+    list-style: disc;
+    font-size: 28px;
+    padding: 10px 0px;
+    margin-left: 50px;
+}
+.div1 ul li:hover{
+    color: var(--blue2);
+    border: bottom 8px rebeccapurple;
+}
+#btnone{
+    background-color: #3572EF;
+    padding: 16px;
+    margin: 20px;
+    font-size:22px;
+    color: white;
+    border-radius: 6px;
+}
+#btnone:hover{
+    background-color:#050C9C;
+}
+#btnone a{
+    color: white;
+}
+.water-drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 120px;
+    color: rgb(207, 202, 202);
+    margin-top: 60px;
+    z-index: -1;
+    position: fixed;
+    margin-left: 200px;
+    rotate  : -20deg;
+}
+</style>
 <body>
     <nav class="navbar">
         <a href="index.html"><h1>EDUNEXT</h1></a>
         <ul class="nav-list">
             <li class="nav-item"><a href="index.html">HOME</a></li>
-            <li class="nav-item"><a href="about.html">About</a></li>
-            <li class="nav-item"><a href="courses.html">Courses</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="filter.html">Courses</a></li>
             <div class="dropdown">
                 <li class="nav-item dropbtn"><a href="#">Educational_portal</a><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
                 </li>
                 <div class="dropdown-content">
-                    <a href="resourses.html">Resourses</a>
-                    <a href="clases.html">Classes</a>
+                    <a href="#">Resourses</a>
+                    <a href="courses.html">Classes</a>
                     
                   </div>
             </div>
-            <li class="nav-item"><a href="blog.html">Blog</a></li>
-            <li class="nav-item"><button><a href="contact us.html">ContactUs</a></button></li>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item"><button><a href="#">ContactUs</a></button></li>
         </ul>
     </nav>
     <div class="head"><ul>
@@ -39,190 +427,47 @@
         <li><a href="pythom.html">Python</a></li>
         <li><div class="search"><input type="text" placeholder="Search"><ion-icon name="search-outline"></ion-icon></div></li>
     </ul></div>
-    <div class="jscontainer">
-        <div class="jsone">
-            <h1 class="jshead">JavaScript Tutorial</h1>
-            <img src="../images2/img3.jpg">
-            <h2 class="jshead2"><u>About javascript</u></h2>
+    <div class="pycontent">
+        <div class="water-drop">JAVASCRIPT</div>
+        <h1>JAVASCRIPT Tutorial</h1>
+        <div class="div1">
             <ul>
-                <li>JavaScript is the world's most popular programming language.</li>
-                <li> JavaScript is the programming language of the Web.</li>
-                <li>JavaScript is easy to learn.</li>
-                <li>This tutorial will teach you JavaScript from basic to advanced.</li>
+                <li><a>JAVASCRIPT Syntax</a></li>
+                <li>JAVASCRIPT Comments</li>
+                <li>JAVASCRIPT Variables</li>
+                <li>JAVASCRIPT Data Types</li>
+                <li>JAVASCRIPT Numbers</li>
+                <li>JAVASCRIPT Casting</li>
+                <li>JAVASCRIPT Strings</li>
+                <li>JAVASCRIPT Booleans</li>
+                <li>JAVASCRIPT Operators</li>
+                <li>JAVASCRIPT Lists</li>
+                <li>JAVASCRIPT Tuples</li>
+                <li>JAVASCRIPT Sets</li>
+                <li>JAVASCRIPT Dictionaries</li>
+                <li>JAVASCRIPT If...Else</li>
+                <li><a>JAVASCRIPT While Loops</a></li>
+                <li>JAVASCRIPT For Loops</li>
+                <li>JAVASCRIPT Functions</li>
+                <li>JAVASCRIPT Scope</li>
+                <li>JAVASCRIPT Arrys</li>
+                <li>JAVASCRIPT Class</li>
+                <li>JAVASCRIPT Inheritance</li>
+                <li>JAVASCRIPT Iterators</li>
+                <li>JAVASCRIPT Polymorphism</li>
+                <li>JAVASCRIPT Scope</li>
+                <li>JAVASCRIPT Modules</li>
+                <li>JAVASCRIPT Dates</li>
+                <li>JAVASCRIPT Math</li>
+                <li>JAVASCRIPT JOSN</li>
+                <li>JAVASCRIPT RegEx</li>
+                <li>JAVASCRIPT MAP</li>
+                <li>JAVASCRIPT Try...Except</li>
+                <li>JAVASCRIPT String Formatting</li>
+                <li>JAVASCRIPT Dates</li>
+                <li>JAVASCRIPT Set</li>
             </ul>
-        </div>
-        <div class="jstwo">
-            <h2 class="jshead2"><u>JavaScript Introduction</u></h2>
-            <h2 class="head3">What Can JavaScript Do?</h2>
-            <ul>
-                <li>JavaScript Can Change HTML Content</li>
-                <p>One of many JavaScript HTML methods is getElementById().
-
-                The example below "finds" an HTML element (with id="demo"),<br> and changes the element content (innerHTML) to "Hello JavaScript":</p>
-                <p id="demo">1.JavaScript can change HTML content.</p>
-                <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-                <p id="demo1">2.JavaScript can change the style of an HTML element.</p>
-                <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
-                <p id="demo2">3.JavaScript can hide HTML elements.</p>
-                <button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
-                <p>4.JavaScript can show hidden HTML elements.</p>
-                <p id="demo3" style="display:none">Hello JavaScript!</p>
-                <button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me!</button>
-            </ul>
-        </div>
-        <div class="jsthree">
-            <h2 class="jshead2"><u>JavaScript Comments</u></h2>
-            <ul>
-                <p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.<br>
-                JavaScript comments can also be used to prevent execution, when testing alternative code. 
-                </p>
-                <li>Single Line Comments</li>
-                <p>Single line comments start with //.<br>
-                    Any text between // and the end of the line will be ignored by JavaScript (will not be executed).<br>
-                    This example uses a single-line comment before each code line.
-                </p>
-            </ul>
-        </div>
-        <div class="jsthree">
-            <h2 class="jshead2"><u>JavaScript Operators</u></h2>
-            <ul>
-                <p>Javascript operators are used to perform different types of mathematical and logical computations.</p>
-                <li>Examples:</li>
-                <h3>1. The Assignment Operator = assigns values</h3>
-                <h3>2. The Addition Operator + adds values</h3>
-                <h3>3. The Multiplication Operator * multiplies values</h3>
-                <h3>4. The Comparison Operator > compares values</h3>
-            </ul>
-        </div>
-        <div class="jsthree">
-            <h2 class="jshead2"><u>JavaScript Data Types</u></h2>
-            <ul>
-                <h2 class="head3">JavaScript has 8 Datatypes</h2>
-                <li>String</li>
-                <li>Number</li>
-                <li>Bigint</li>
-                <li>Boolean</li>
-                <li>Undefined</li>
-                <li>Null</li>
-                <li>Symbol</li>
-                <li>Object</li>
-            </ul>
-        </div>
-        <div class="jsthree">
-            <h2 class="jshead2"><u>JavaScript Functions</u></h2>
-            <ul>
-                <h2 class="head3">JavaScript has 8 Datatypes</h2>
-                <pre>
-                    A JavaScript function is a block of code designed to perform a particular task.
-
-                    A JavaScript function is executed when "something" invokes it (calls it).
-                </pre>
-                <p id="demo4"></p>
-                <pre>
-                        '''function myFunction(p1, p2) {
-                          return p1 * p2;
-                        }
-                        
-                        let result = myFunction(4, 3);
-                        document.getElementById("demo").innerHTML = result;'''
-                </pre>
-            </ul>
-        </div>
-        <div class="jsthree">
-            <h2 class="jshead2"><u>JavaScript Objects</u></h2>
-            <ul>
-                <h2 class="head3">Real Life Objects</h2>
-                <pre>
-                    In real life, objects are things like: houses, cars, people, animals, or any other subjects.
-                </pre>
-                <li>Defineing a Object Method</li>
-                <pre class="sha1">
-                    const person = {
-                        firstName: "John",
-                        lastName: "Doe",
-                        id: 5566,
-                        fullName: function() {
-                          return this.firstName + " " + this.lastName;
-                        }
-                      };
-                      
-                      document.getElementById("demo").innerHTML = person.fullName();
-                </pre>
-            </ul>
-        </div>
-        <div class="jsthree">
-            <ul>
-                <h2 class="head3">JavaScript Object Constructors</h2>
-                <pre>
-                    Sometimes we need to create many objects of the same type.
-
-                    To create an object type we use an object constructor function.
-
-                    It is considered good practice to name constructor functions with an upper-case first letter.
-                </pre>
-                <li>Defineing a Object Constructor Functions</li>
-                <pre class="sha1">
-                    // Constructor function for Person objects
-                    function Person(first, last, age, eye) {
-                      this.firstName = first;
-                      this.lastName = last;
-                      this.age = age;
-                      this.eyeColor = eye;
-                    }
-                    
-                    // Create two Person objects
-                    const myFather = new Person("John", "Doe", 50, "blue");
-                    const myMother = new Person("Sally", "Rally", 48, "green");
-                    
-                    // Display age
-                    document.getElementById("demo").innerHTML =
-                    "My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
-                </pre>
-            </ul>
-        </div>
-        <div class="jsthree">
-            <h2 class="jshead2"><u>JavaScript Events</u></h2>
-            <pre>                HTML events are "things" that happen to HTML elements.
-
-                When JavaScript is used in HTML pages, JavaScript can "react" on these events.
-            </pre>
-            <ul>
-                <li>Common HTML Events</li>
-                <pre class="sha1">
-                <u>Here is a list of some common HTML events:</u>
-
-                Event: 	           Description
-                onchange:	   An HTML element has been changed
-                onclick:	   The user clicks an HTML element
-                onmouseover:	   The user moves the mouse over an HTML element
-                onmouseout:	   The user moves the mouse away from an HTML element
-                onkeydown:	   The user pushes a keyboard key
-                onload:	           The browser has finished loading the page
-                </pre>
-            </ul>
-        </div>
-        <div class="jsthree">
-            <h2 class="jshead2"><u>The HTML DOM (Document Object Model)</u></h2>
-            <pre>            When a web page is loaded, the browser creates a Document Object Model of the page.
-
-            The HTML DOM model is constructed as a tree of Objects:</pre>
-            <ul>
-                <pre class="sha1">
-                    <li style="list-style-type: none;"><u>With the object model, JavaScript gets all the power it needs to create dynamic HTML:</u></li>
-
-                    1. JavaScript can change all the HTML elements in the page
-                    2. JavaScript can change all the HTML attributes in the page
-                    3. JavaScript can change all the CSS styles in the page
-                    4. JavaScript can remove existing HTML elements and attributes
-                    5. JavaScript can add new HTML elements and attributes
-                    6. JavaScript can react to all existing HTML events in the page
-                    7. JavaScript can create new HTML events in the page
-                </pre>
-            </ul>
-        </div>
-        <div class="jsfour">
-            <h1 class="jshead">For Full Course Watch Below Video</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg?si=26CQ-ShLkUANutQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <button id="btnone"><a href="https://www.w3schools.com/JAVASCRIPT/default.asp" target="_self">Full Course Click Here</a></button>
         </div>
     </div>
     <footer>
@@ -283,11 +528,13 @@
             <h5>For More Info</h5>
             <form action="">
                 <input type="text" placeholder="Your Name"><br>
-                <input type="text" placeholder="your Mail"><br>
-                <textarea placeholder="Comment"></textarea>
+                <input type="text" placeholder="your Mail"><br><br>
+                <textarea placeholder="Comment" cols="25" rows="4"></textarea><br>
                 <button>Submit</button>
             </form>
         </div>
     </footer>
-</body>
-</html>
+</div>
+    
+    </body>
+    </html>

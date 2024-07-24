@@ -6,12 +6,27 @@
     <title>Document</title>
 </head>
 <style>
-
-.a1 p{
-    font-size: 30px;
+    .a1 p{
+   color: black;
+   font-size: 30px;
+   text-align: center;
+    }
+    .water_droplet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 150px;
+    color: rgb(207, 202, 202);
+    margin-top: 150px;
+    z-index: -1;
+    position: fixed;
+    margin-left: 300px;
+    rotate  : -40deg;
 }
 .a1 h1{
-    margin-left: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 .a1{
     margin-top: 100px;
@@ -20,23 +35,8 @@
 .a1 li{
     font-size: 30px;
     margin-right: 700px;
-    padding: 10px;
+    padding: 20px;
     margin-left: 100px;
-   
-
-}
-.water_droplet{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 250px;
-    color: rgb(207, 202, 202);
-    margin-top: 150px;
-    z-index: -1;
-    position: fixed;
-    margin-left: 150px;
-    rotate  : -40deg;
 }
 *{
     margin: 0;
@@ -114,6 +114,14 @@ nav h1{
 }
 .dropdown-content{
     display: none;
+}
+form textarea{
+    height: 100px;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
 }
 .dropdown-content a {
     color: black;
@@ -212,46 +220,6 @@ footer hr{
 color: white;
 margin-top: 50px;
 }
-.head{
-    height:40px ;
-    width: 100%;
-    background-color: var(--blue2);
-    
-  }
-  .head ul{
-    display: flex;
-    margin-top: 100px;
-  }
-  .head ul li{
-    list-style: none;
-    margin-left: 50px;
-    margin-top: 10px;
-  }
-  .head ul li a:hover{
-    color:white
-  }
-  .head ul li a{
-    color: black;
-  }
-  .search{
-    height: 25px;
-    width: 300px;
-    background-color: white;
-    display: flex;
-    
-    border-radius: 5px;
-  }
-  .search ion-icon{
-   font-size: 20px;
-   margin-left: 20px;
-   margin-top: 2px;
-  }
-  .search input{
-    outline: none;
-    
-    margin-left: 10px;
-    width: 240px;
-  }
 </style>
 <body>
     <nav class="navbar">
@@ -273,104 +241,90 @@ margin-top: 50px;
             <li class="nav-item"><button><a href="contact us.html">ContactUs</a></button></li>
         </ul>
     </nav>
-    <div class="head"><ul>
-        <li><a href="courses.html">HTML</a></li>
-        <li><a href="C.html">C</a></li>
-        <li><a href="java.html">JAVA</a></li>
-        <li><a href="jspage.html">JS</a></li>
-        <li><a href="php.html">PHP</a></li>
-        <li><a href="sql.html">SQL</a></li>
-        <li><a href="mangodb.html">MONGODB</a></li>
-        <li><a href="mysql.html">MYSQL</a></li>
-        <li><a href="pythom.html">PYTHON</a></li>
-        <li><div class="search"><input type="text" placeholder="Search"><ion-icon name="search-outline"></ion-icon></div></li>
-    </ul></div>
    
-    <div class="water_droplet">C</div>
-    <div class="a1">
-    <h1>C Curriculum</h1>
-      <li>C Intro</li>
-      <li>C Syntax</li>
-      <li> C Variables</li>
-      <li>C Data Types</li>
-      <li>C Operators</li>
-      <li>C If Else</li>
-      <li>C while Loop</li>
-      <li>C For Loop</li>
-      <li> C Arrays</li>
-      <li>C Strings</li>
-      <li>Pointers</li>
-     <h1>C Functions</h1>
-     <li>C Functions</li>
-     <li>C Function Parameters</li>
-     <li>C Scope</li>
-     <li> C Function Declaration</li>
-     <li> C Recursion</li>
-     <li> C Math Functions</li>
+    <div class="water_droplet">PYTHON</div>
+<div class="a1">
+    <h1>PYTHON Curriculum</h1>
+<li>Python Intro</li>
+<li>Python Get Started</li>
+<li>Python Syntax</li>
+<li>Python Comments</li>
+<li>Python Variables</li>
+<li>Python Data Types</li>
+<li>Python Numbers</li>
+<li>Python Strings</li>
+<li>Python Operators</li>
+<li>Python Lists</li>
+<li>Python If Else</li>
+<li>Python While Loops</li>
+<li>Python For Loops</li>
+<li>Python Functions</li>
+<li>Python Arrays</li>
+<li>Python Inheritance</li>
+</div>
+<footer>
+    <div class="foot">
+        <div class="foot11">
+            <h5>ALL</h5>
+            <p>Home<p>
+        </div>
+        <div class="foot12">
+            <h5>Courses</h5>
+        </div>
+        <div class="foot13">
+            <h5>Blog</h5>
+        </div>
+        <div class="foot14">
+            <h5>About</h5>
+        </div>
+        <div class="foot14">
+            <h5>Contact Us</h5>
+        </div>
     </div>
-    <footer>
-        <div class="foot">
-            <div class="foot11">
-                <h5>ALL</h5>
-                <p>Home<p>
-            </div>
-            <div class="foot12">
-                <h5>Courses</h5>
-            </div>
-            <div class="foot13">
-                <h5>Blog</h5>
-            </div>
-            <div class="foot14">
-                <h5>About</h5>
-            </div>
-            <div class="foot14">
-                <h5>Contact Us</h5>
-            </div>
-        </div>
-        <div class="foot">
-            <ul>
-                <li><h5>FAQ</h5></li>
-                <li>Privacy & Policy</li>
-                <li>Terms & Services</li>
-                <li></li>
-               
-            </ul>
-        </div>
-        <div class="foot">
-            <ul>
-                <li><h5>Resource</h5></li>
-                <li>FAQ</li>
-                <li>Reviews</li>
-                <li>Blogs</li>
-                <li>Return Policy</li>
-            </ul>
-        </div>
-        <div class="foot">
-            <ul><li><h5>Utilities</h5></li>
-            <li>Style Guide</li>
-            <li>Error 404</li>
-            <li>Licensing</li>
-            <li>Changelog</li>
-            </ul>
-        </div>
-        <div class="foot">
-            <ul>
-                <li><h5>Connect</h5></li>
-                <li> Instagram</li>
-                <li>Facebook</li>
-                <li>YouTube</li>
-                <li>Twitter</li>
-            </ul>
-        </div>
-        <div class="foot2">
-            <h5>For More Info</h5>
-            <form action="">
-                <input type="text" placeholder="Your Name"><br>
-                <input type="text" placeholder="your Mail"><br>
-                <textarea placeholder="Comment"></textarea>
-                <button>Submit</button>
-            </form>
-        </div>
-    </footer>
+    <div class="foot">
+        <ul>
+            <li><h5>FAQ</h5></li>
+            <li>Privacy & Policy</li>
+            <li>Terms & Services</li>
+            <li></li>
+           
+        </ul>
+    </div>
+    <div class="foot">
+        <ul>
+            <li><h5>Resource</h5></li>
+            <li>FAQ</li>
+            <li>Reviews</li>
+            <li>Blogs</li>
+            <li>Return Policy</li>
+        </ul>
+    </div>
+    <div class="foot">
+        <ul><li><h5>Utilities</h5></li>
+        <li>Style Guide</li>
+        <li>Error 404</li>
+        <li>Licensing</li>
+        <li>Changelog</li>
+        </ul>
+    </div>
+    <div class="foot">
+        <ul>
+            <li><h5>Connect</h5></li>
+            <li> Instagram</li>
+            <li>Facebook</li>
+            <li>YouTube</li>
+            <li>Twitter</li>
+        </ul>
+    </div>
+    <div class="foot2">
+        <h5>For More Info</h5>
+        <form action="">
+            <input type="text" placeholder="Your Name"><br>
+            <input type="text" placeholder="your Mail"><br>
+            <textarea placeholder="Comment"></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+</footer>
 </body>
 </html>

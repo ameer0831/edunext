@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MONGODB</title>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -19,7 +19,7 @@
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align:none;
 }
 nav h1{
   color: black;
@@ -30,7 +30,7 @@ nav h1{
     --blue3:#3ABEF9;
     --blue4:#A7E6FF;
 }
-    .python p{
+    .MONGODB p{
 font-size: 250%;
     }
     .navbar {
@@ -159,13 +159,13 @@ nav a {
 main {
     padding: 20px;
 }
-.php{
+.MONGODB{
 text-align: left;
 }
-.php p{
+.MONGODB p{
 font-size: 30px;
 }
-.php li{
+.MONGODB li{
     font-size: 20px;
 }
 .vid{
@@ -178,25 +178,25 @@ font-size: 30px;
 .why li{
     padding: 10px;
 }
-.phpvar{
+.MONGODBvar{
     text-align: left;
 }
-.phpvar p{
+.MONGODBvar p{
     font-size: 20px;
 }
-.phpvar li{
+.MONGODBvar li{
     padding: 10px;
 }
-.phpdata{
+.MONGODBdata{
     text-align: left;
 }
-.phpdata li{
+.MONGODBdata li{
     padding: 10px;
 }
-.phpstrings{
+.MONGODBstrings{
     text-align: left;
 }
-.phpstrings li{
+.MONGODBstrings li{
     padding: 10px;
 }
 footer{
@@ -276,6 +276,51 @@ footer hr{
     color: white;
     margin-top: 50px;
 }
+.pycontent h1{
+    font-size: 55px;
+    padding: 40px 0px;
+    color: #3572EF;
+    text-align: center;
+}
+.div1 ul li{
+    list-style-type: style square;;
+    font-size: 28px;
+    padding: 10px 0px;
+    margin-left: 50px;
+}
+.div1 ul li:hover{
+    color: var(--blue2);
+    border: bottom 8px rebeccapurple;
+}
+#btnone{
+    background-color: #3572EF;
+    padding: 16px;
+    margin: 20px;
+    font-size:22px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+}
+#btnone:hover{
+    background-color:#050C9C;
+}
+#btnone a{
+    color: white;
+}
+.water-drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 180px;
+    color: rgb(207, 202, 202);
+    margin-top: 90px;
+    z-index: -1;
+    position: fixed;
+    margin-left: 200px;
+    rotate  : -20deg;
+}
+
     </style>
 <body>
     <nav class="navbar">
@@ -283,7 +328,7 @@ footer hr{
         <ul class="nav-list">
             <li class="nav-item"><a href="index.html">HOME</a></li>
             <li class="nav-item"><a href="about.html">About</a></li>
-            <li class="nav-item"><a href="courses.html">Courses</a></li>
+            <li class="nav-item"><a href="filter.html">Courses</a></li>
             <div class="dropdown">
                 <li class="nav-item dropbtn"><a href="#">Educational_portal</a><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
                 </li>
@@ -293,8 +338,8 @@ footer hr{
                     
                   </div>
             </div>
-            <li class="nav-item"><a href="blog.html">Blog</a></li>
-            <li class="nav-item"><button><a href="contact us.html">ContactUs</a></button></li>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item"><button><a href="#">ContactUs</a></button></li>
         </ul>
     </nav>
     <div class="head"><ul>
@@ -306,95 +351,47 @@ footer hr{
         <li><a href="sql.html">SQL</a></li>
         <li><a href="mangodb.html">MONGODB</a></li>
         <li><a href="mysql.html">MYSQL</a></li>
-        <li><a href="pythom.html">Python</a></li>
+        <li><a href="pythom.html">PYTHON</a></li>
         <li><div class="search"><input type="text" placeholder="Search"><ion-icon name="search-outline"></ion-icon></div></li>
     </ul></div>
-    <div class="php">
-    <h1>MONGODB Tutorial</h1>
-    <img src="img11.jpg" height="300px" width="300px">
-    <p>What is MONGODB?</p>
-    <li>MONGODB (Hypertext Preprocessor) is a widely-used open-source<br> server-side scripting language designed primarily for web development.<br> It can be embedded into HTML,making it easy to add dynamic<br>  content and functionality to websites.</li>   
-</div>
-<div class="vid">
-    <iframe width="460" height="315" src="https://www.youtube.com/embed/-bt_y4Loofg?si=LSZ47X5kNxL4ison" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-<div class="why">
-    <h1>Why MONGODB?</h1>
-    <li>MONGODB runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
-<li>MONGODB is compatible with almost all servers used today (Apache, IIS, etc.)</li>
-<li>MONGODB supports a wide range of databases</li>
-<li>MONGODB is free. Download it from the official PHP resource: www.php.net</li>
-<li>MONGODB is easy to learn and runs efficiently on the server side</li>
-</div>
-<div class="phpvar">
-    <h1>MONGODB Variables</h1>
-    <p>A variable can have a short name (like $x and $y) or a more descriptive name ($age, $carname, $total_volume).</p>
-    <p>Rules for PHP variables:</p>
-   <li>A variable starts with the $ sign, followed by the name of the variable</li> 
-   <li>A variable name must start with a letter or the underscore character</li> 
-   <li>A variable name cannot start with a number</li> 
-   <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li> 
-   <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li> 
-</div>
-<div class="phpdata">
-    <h1>PHP Data Types</h1>
-    <p>Variables can store data of different types, and different data types can do different things.</p>
-  <p>PHP supports the following data types:</p>
-  <li>String</li>
-  <li>Integer</li>
-  <li>Float (floating point numbers - also called double)</li>
-  <li>Boolean</li>
-  <li>Array</li>
-  <li>Object</li>
-  <li>NULL</li>
-  <li>Resource</li>
-</div>
-<div class="phpstrings">
-    <h1>PHP Strings</h1>
-    <p>A string is a series of characters, where a character is the same as a byte. This means<br> that PHP only supports a 256-character set, and hence does not offer native Unicode support. See details of the<br> string type. Note: On 32-bit builds, a string can be as large as up to 2GB (2147483647 bytes maximum)</p>
-    <h1>Php Numbers</h1>
-    <li>Integer</li>
-    <li>Float</li>
-    <li>Number Strings</li>
-    <p>In addition, PHP has two more data types used for numbers:</p>
-    <li>Infinity</li>
-    <li>NaN</li>
-    <h1>PHP Casting</h1>
-    <p>Sometimes you need to change a variable from one data type into another, and sometimes<br> you want a variable to have a specific data type. This can be done with casting.</p>
-    <h2>Change Data Type</h2>
-    <h4>Casting in PHP is done with these statements:</h4>
-    <li>(string) - Converts to data type String</li>
-    <li>(int) - Converts to data type Integer</li>
-    <li>(float) - Converts to data type Float</li>
-    <li>(bool) - Converts to data type Boolean</li>
-    <li>(array) - Converts to data type Array</li>
-    <li>(object) - Converts to data type Object</li>
-    <li>(unset) - Converts to data type NULL</li>
-    <h1>PHP Operators</h1>
-    <p>Operators are used to perform operations on variables and values.</p>
-    <p>PHP divides the operators in the following groups:</p>
-    <li>Arithmetic operators</li>
-    <li>Assignment operators</li>
-    <li>Comparison operators</li>
-    <li>Increment/Decrement operators</li>
-    <li>Logical operators</li>
-    <li>String operators</li>
-    <li>Array operators</li>
-    <li>Conditional assignment operators</li>
-    <h2>PHP Arithmetic Operators</h2>
-    <p>The PHP arithmetic operators are used with numeric values to perform common arithmetical operations, such as addition, subtraction, multiplication etc.</p>
-    <h2>PHP Assignment Operators</h2>
-    <p>The PHP assignment operators are used with numeric values to write a value to a variable.</p>
-    <p>The basic assignment operator in PHP is "=". It means that the left operand gets set to the value of the assignment expression on the right.</p>
-    <h2>PHP Increment / Decrement Operators</h2>
-<p>The PHP increment operators are used to increment a variable's value.</p>
-<p>The PHP decrement operators are used to decrement a variable's value.</p>
-<h1>PHP if Statements</h1>
-<p>Conditional statements are used to perform different actions based on different conditions.</p>
-<h2>PHP Conditional Statements</h2>
-<p>Very often when you write code, you want to perform different actions for different conditions. <br>You can use conditional statements in your code to do this.</p>
-</div>
-
+    
+    <div class="pycontent">
+        <div class="water-drop">MONGODB</div>
+        <h1>MONGODB Tutorial</h1>
+        <div class="div1">
+            <ul>
+                <li><a>MONGODB DATA BASE</a></li>
+                <li>MONGODB Create Collection</li>
+                <li>MONGODB Insert</li>
+                <li>MONGODB Find Update</li>
+                <li>MONGODB Delete</li>
+                <li>MONGODB Query Operator</li>
+                <li>MONGODB Update Operator</li>
+                <li>MONGODB Aggregations</li>
+                <li>MONGODB Validation</li>
+                <li>MONGODB Data API</li>
+                <li>MONGODB Drivers</li>
+                <li>MONGODB Node.js Driver</li>
+                <li>MONGODB Charts</li>
+                <li>MONGODB Query API</li>
+                <li>MONGODB For Loops</li>
+                <li>MONGODB Functions</li>
+                <li>MONGODB Lambda</li>
+                <li>MONGODB Scope</li>
+                <li>MONGODB HashMap Loop</li>
+                <li>MONGODB Static Methods</li>
+                <li>MONGODB Area Of Reactangle</li>
+                <li>MONGODB JOSN</li>
+                <li>MONGODB Random Numbers</li>
+                <li>MONGODB Connection String</li>
+                <li>MONGODB Odd Numbers</li>
+                <li>MONGODB Cookies</li>
+                <li>MONGODB Sessions</li>
+                <li>MONGODB Filters</li>
+            </ul>
+            <button id="btnone"><a href="https://www.w3schools.com/mongodb/mongodb_nodejs_connect_database.php" target="_self">Full Course Click Here</a></button>
+        </div>
+    </div>
 <footer>
     <div class="foot">
         <div class="foot11">
